@@ -67,19 +67,21 @@ export default function ContactPage() {
                   <div className="w-10 h-10 rounded-xl bg-white border border-[#E3EAF7] text-[#2563EB] flex items-center justify-center shrink-0 shadow-sm">
                     <Phone className="w-5 h-5 text-[#2563EB]" />
                   </div>
-                  <div className="space-y-1">
-                    <h3 className="font-bold text-sm text-[#0A1B3D]">Admissions Helpline</h3>
-                    <p className="text-xs sm:text-sm text-[#0A1B3D]">
-                      <a
-                        href={`tel:${institutionData.contact.phone.replace(/\s+/g, "")}`}
-                        className="hover:text-[#2563EB] font-semibold transition-colors duration-200"
-                      >
-                        {institutionData.contact.phone}
-                      </a>
-                    </p>
-                    <p className="text-xs text-[#5B6B8C]">
-                      General inquiries, fee guidance & appointment bookings
-                    </p>
+                  <div className="space-y-2 w-full">
+                    <h3 className="font-bold text-sm text-[#0A1B3D]">Official Contact Numbers</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                      {institutionData.contact.allPhones.map((item) => (
+                        <div key={item.raw} className="p-2.5 rounded-xl bg-white border border-[#E3EAF7]">
+                          <p className="text-[11px] font-semibold text-[#5B6B8C] uppercase tracking-wider">{item.label}</p>
+                          <a
+                            href={`tel:${item.raw}`}
+                            className="font-bold text-sm text-[#0A1B3D] hover:text-[#2563EB] transition-colors"
+                          >
+                            {item.number}
+                          </a>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
 

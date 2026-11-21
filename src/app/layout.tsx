@@ -76,7 +76,7 @@ export default function RootLayout({
       "Vidyarthi Bhavan IIT Academy is a premier educational institution in Narasannapeta, AP, specializing in school academics, IIT-JEE Foundation for high-school students, AI & coding, and Indian heritage values.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Main Road, Near Old Bus Stand",
+      streetAddress: "State Bank Street, Narasannapeta Town, Narasannapeta Mandal",
       addressLocality: "Narasannapeta",
       addressRegion: "Andhra Pradesh",
       postalCode: "532421",

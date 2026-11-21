@@ -181,14 +181,23 @@ export default function Footer() {
                   {institutionData.location.address}
                 </span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                <a
-                  href={`tel:${institutionData.contact.phone.replace(/\s+/g, "")}`}
-                  className="hover:text-[#38BDF8] transition-colors duration-200"
-                >
-                  {institutionData.contact.phone}
-                </a>
+              <div className="space-y-1">
+                <div className="flex items-center gap-2.5">
+                  <Phone className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  <a
+                    href={`tel:${institutionData.contact.phone.replace(/\s+/g, "")}`}
+                    className="hover:text-[#38BDF8] transition-colors duration-200 font-semibold"
+                  >
+                    {institutionData.contact.phone}
+                  </a>
+                </div>
+                <div className="pl-6 text-xs text-[#E3EAF7]/75 flex flex-wrap gap-x-2 gap-y-0.5 font-mono">
+                  <a href="tel:7981665714" className="hover:text-[#38BDF8]">7981665714</a>
+                  <span>·</span>
+                  <a href="tel:9490566550" className="hover:text-[#38BDF8]">9490566550</a>
+                  <span>·</span>
+                  <a href="tel:7981074545" className="hover:text-[#38BDF8]">7981074545</a>
+                </div>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#38BDF8] shrink-0" />

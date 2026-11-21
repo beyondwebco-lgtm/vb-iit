@@ -75,14 +75,23 @@
 
 ---
 
-## 3. Missing Details & Placeholders Strategy
+## 3. Verified Contact & Address Confirmation (Direct From Founder Govinda Babu)
 
-To comply with data accuracy guidelines:
-1. **Contact Numbers & Emails:**
-   - Source files did not specify numerical phone numbers or email addresses.
-   - Strategy: Provide standardized environment variables (`NEXT_PUBLIC_SCHOOL_PHONE`, `NEXT_PUBLIC_SCHOOL_EMAIL`, `NEXT_PUBLIC_SCHOOL_ADDRESS`) with clean default placeholders formatted for Narasannapeta, AP, clearly annotated for administrative customization.
-2. **Campus Facilities & Classrooms:**
-   - Source files confirm classroom instruction, IIT foundation labs, AI/coding learning, yoga & martial arts spaces, and library/study areas.
-   - Strategy: Present verified academic infrastructure without exaggerating unverified physical structures.
-3. **Admissions Procedures:**
-   - Verified entry for School Academics and IIT Foundation courses with a full interactive enquiry application.
+Directly confirmed by Founder / Director Arangi Govinda Babu on 21/11/2026:
+
+### 3.1 Official Physical Address
+- **Institution:** Vidhyardhi Bhavan IIT Academy (Vidyarthi Bhavan IIT Academy)
+- **Street Address:** State Bank Street
+- **Town:** Narasannapeta Town
+- **Mandal:** Narasannapeta Mandal
+- **District:** Srikakulam District
+- **State:** Andhra Pradesh
+- **Postal Code:** 532421
+
+### 3.2 Official Helpline & Contact Numbers
+1. **+91 94403 47837** — Primary Helpline / Director & Admissions
+2. **+91 79816 65714** — Campus & Academic Helpline
+3. **+91 94905 66550** — Student & Parent Support
+4. **+91 79810 74545** — General Enquiries Desk
+
+All 4 numbers and the exact State Bank Street address have been integrated across the website components, footers, admissions sections, interactive click-to-call links, and metadata.

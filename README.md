@@ -140,11 +140,11 @@ Create a `.env.local` file based on `.env.example`:
 NEXT_PUBLIC_SITE_URL=https://vbiitacademy.edu.in
 NEXT_PUBLIC_SCHOOL_NAME="Vidyarthi Bhavan IIT Academy"
 NEXT_PUBLIC_SCHOOL_SHORT_NAME="VB IIT Academy"
-NEXT_PUBLIC_SCHOOL_LOCATION="Narasannapeta, Srikakulam District, Andhra Pradesh"
-NEXT_PUBLIC_SCHOOL_PHONE="+91 94901 23456"
-NEXT_PUBLIC_SCHOOL_WHATSAPP="+919490123456"
+NEXT_PUBLIC_SCHOOL_LOCATION="State Bank Street, Narasannapeta Town, Narasannapeta Mandal, Srikakulam District, Andhra Pradesh"
+NEXT_PUBLIC_SCHOOL_PHONE="+91 94403 47837"
+NEXT_PUBLIC_SCHOOL_WHATSAPP="+919440347837"
 NEXT_PUBLIC_SCHOOL_EMAIL="info@vbiitacademy.edu.in"
-NEXT_PUBLIC_SCHOOL_ADDRESS="Main Road, Near Old Bus Stand, Narasannapeta, Srikakulam District, Andhra Pradesh - 532421"
+NEXT_PUBLIC_SCHOOL_ADDRESS="State Bank Street, Narasannapeta Town, Narasannapeta Mandal, Srikakulam District, Andhra Pradesh - 532421"
 
 # Backend Email Notification (Optional)
 EMAIL_SERVICE_API_KEY=""

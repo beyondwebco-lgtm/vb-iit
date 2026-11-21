@@ -90,7 +90,17 @@ export default function AdmissionsPage() {
                     <span>WhatsApp Desk</span>
                   </a>
                 </div>
-                <div className="flex items-center gap-2 text-xs text-[#5B6B8C] justify-center">
+                <div className="pt-3 border-t border-[#E3EAF7] text-center space-y-1">
+                  <p className="text-xs font-semibold text-[#0A1B3D]">Direct Helplines:</p>
+                  <div className="flex flex-wrap justify-center gap-2 text-xs font-mono font-medium text-[#2563EB]">
+                    {institutionData.contact.allPhones.map((p) => (
+                      <a key={p.raw} href={`tel:${p.raw}`} className="hover:underline bg-white border border-[#E3EAF7] px-2 py-0.5 rounded-md">
+                        {p.number}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-[#5B6B8C] justify-center pt-1">
                   <Clock className="w-3.5 h-3.5 text-[#2563EB]" />
                   <span>Office Timing: {institutionData.contact.hours}</span>
                 </div>
