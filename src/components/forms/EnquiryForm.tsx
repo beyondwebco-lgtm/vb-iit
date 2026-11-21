@@ -42,7 +42,7 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
     setError(null);
     setSuccess(null);
 
-    // Basic Client validation
+    // Client validation
     if (!formData.studentName.trim() || formData.studentName.trim().length < 2) {
       setError("Please enter the student's full name.");
       return;
@@ -95,18 +95,18 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
   };
 
   return (
-    <div className="bg-white rounded-2xl p-6 sm:p-8 border border-blue-100 shadow-xl shadow-blue-900/5">
+    <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#E3EAF7] shadow-[0_10px_30px_rgba(37,99,235,0.08)]">
       {success ? (
         <div className="text-center py-8 space-y-4">
-          <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
-            <CheckCircle2 className="w-8 h-8" />
+          <div className="w-16 h-16 bg-[#F5F8FF] text-[#2563EB] border border-[#E3EAF7] rounded-full flex items-center justify-center mx-auto shadow-[0_4px_14px_rgba(37,99,235,0.12)]">
+            <CheckCircle2 className="w-8 h-8 text-[#2563EB]" />
           </div>
-          <h3 className="text-2xl font-bold text-[#0B1F4C]">Enquiry Received Successfully!</h3>
-          <p className="text-slate-600 max-w-md mx-auto text-sm leading-relaxed">
+          <h3 className="text-2xl font-extrabold text-[#0A1B3D]">Enquiry Received Successfully!</h3>
+          <p className="text-[#5B6B8C] max-w-md mx-auto text-sm leading-relaxed">
             {success}
           </p>
           {refId && (
-            <div className="inline-block bg-blue-50 border border-blue-200 text-[#1D4ED8] font-mono text-xs px-3 py-1.5 rounded-lg">
+            <div className="inline-block bg-[#F5F8FF] border border-[#E3EAF7] text-[#2563EB] font-mono text-xs px-3.5 py-1.5 rounded-lg">
               Reference ID: {refId}
             </div>
           )}
@@ -117,16 +117,16 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
                 setSuccess(null);
                 setRefId(null);
               }}
-              className="text-sm font-semibold text-[#1D4ED8] hover:underline"
+              className="text-sm font-semibold text-[#2563EB] hover:text-[#1E40AF] underline underline-offset-4 transition-colors"
             >
               Submit Another Enquiry
             </button>
-            <span className="text-slate-300 hidden sm:inline">•</span>
+            <span className="text-[#5B6B8C] hidden sm:inline">•</span>
             <a
               href={`tel:${institutionData.contact.phone.replace(/\s+/g, "")}`}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 hover:text-[#0B1F4C]"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#0A1B3D] hover:text-[#2563EB] transition-colors"
             >
-              <PhoneCall className="w-4 h-4 text-[#1D4ED8]" />
+              <PhoneCall className="w-4 h-4 text-[#2563EB]" />
               Direct Helpline: {institutionData.contact.phone}
             </a>
           </div>
@@ -145,15 +145,15 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
           />
 
           {error && (
-            <div className="p-3.5 bg-rose-50 border border-rose-200 text-rose-700 rounded-xl text-xs sm:text-sm flex items-start gap-2.5">
-              <AlertCircle className="w-5 h-5 shrink-0 text-rose-600 mt-0.5" />
+            <div className="p-3.5 bg-red-50/80 border border-red-200/80 text-red-700 rounded-xl text-xs sm:text-sm flex items-start gap-2.5">
+              <AlertCircle className="w-5 h-5 shrink-0 text-red-600 mt-0.5" />
               <span>{error}</span>
             </div>
           )}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="studentName" className="block text-xs font-bold text-slate-700 mb-1">
+              <label htmlFor="studentName" className="block text-xs font-bold text-[#0A1B3D] mb-1">
                 Student Full Name *
               </label>
               <input
@@ -164,12 +164,12 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
                 value={formData.studentName}
                 onChange={handleChange}
                 placeholder="e.g. S. Sai Krishna"
-                className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-200 focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-100 outline-none transition"
+                className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] placeholder-[#5B6B8C]/60 focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200"
               />
             </div>
 
             <div>
-              <label htmlFor="parentName" className="block text-xs font-bold text-slate-700 mb-1">
+              <label htmlFor="parentName" className="block text-xs font-bold text-[#0A1B3D] mb-1">
                 Parent / Guardian Name *
               </label>
               <input
@@ -180,14 +180,14 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
                 value={formData.parentName}
                 onChange={handleChange}
                 placeholder="e.g. S. Venkatesh"
-                className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-200 focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-100 outline-none transition"
+                className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] placeholder-[#5B6B8C]/60 focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="mobileNumber" className="block text-xs font-bold text-slate-700 mb-1">
+              <label htmlFor="mobileNumber" className="block text-xs font-bold text-[#0A1B3D] mb-1">
                 Mobile Number *
               </label>
               <input
@@ -198,12 +198,12 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
                 value={formData.mobileNumber}
                 onChange={handleChange}
                 placeholder="10-digit mobile number"
-                className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-200 focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-100 outline-none transition"
+                className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] placeholder-[#5B6B8C]/60 focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200"
               />
             </div>
 
             <div>
-              <label htmlFor="currentClass" className="block text-xs font-bold text-slate-700 mb-1">
+              <label htmlFor="currentClass" className="block text-xs font-bold text-[#0A1B3D] mb-1">
                 Current Class / Standard *
               </label>
               <select
@@ -211,7 +211,7 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
                 name="currentClass"
                 value={formData.currentClass}
                 onChange={handleChange}
-                className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-200 focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-100 outline-none transition bg-white"
+                className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200 bg-white"
               >
                 <option value="Class 5">Class 5</option>
                 <option value="Class 6">Class 6</option>
@@ -225,7 +225,7 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
           </div>
 
           <div>
-            <label htmlFor="interestedProgram" className="block text-xs font-bold text-slate-700 mb-1">
+            <label htmlFor="interestedProgram" className="block text-xs font-bold text-[#0A1B3D] mb-1">
               Interested Program *
             </label>
             <select
@@ -233,7 +233,7 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
               name="interestedProgram"
               value={formData.interestedProgram}
               onChange={handleChange}
-              className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-200 focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-100 outline-none transition bg-white"
+              className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200 bg-white"
             >
               <option value="IIT-JEE Foundation Program">IIT-JEE Foundation Program (Classes 6-10)</option>
               <option value="Comprehensive School Academics">Comprehensive School Academics</option>
@@ -244,7 +244,7 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-xs font-bold text-slate-700 mb-1">
+            <label htmlFor="message" className="block text-xs font-bold text-[#0A1B3D] mb-1">
               Questions or Message (Optional)
             </label>
             <textarea
@@ -254,29 +254,29 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
               value={formData.message}
               onChange={handleChange}
               placeholder="Any specific questions regarding curriculum, transportation, or batch timings..."
-              className="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-200 focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-100 outline-none transition resize-none"
+              className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] placeholder-[#5B6B8C]/60 focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200 resize-none"
             />
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full inline-flex items-center justify-center gap-2 bg-[#1D4ED8] hover:bg-[#2563EB] text-white font-bold py-3 px-4 rounded-xl shadow-md shadow-blue-700/20 active:scale-[0.99] transition disabled:opacity-60 cursor-pointer"
+            className="w-full inline-flex items-center justify-center gap-2 bg-[#2563EB] hover:bg-[#1E40AF] text-white font-bold py-3.5 px-4 rounded-xl shadow-[0_4px_14px_rgba(37,99,235,0.25)] hover:shadow-[0_8px_20px_rgba(37,99,235,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 disabled:opacity-60 cursor-pointer"
           >
             {loading ? (
               <>
-                <Loader2 className="w-5 h-5 animate-spin" />
+                <Loader2 className="w-5 h-5 animate-spin text-[#38BDF8]" />
                 <span>Submitting Enquiry...</span>
               </>
             ) : (
               <>
                 <span>Submit Admission Enquiry</span>
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4 text-[#38BDF8]" />
               </>
             )}
           </button>
 
-          <p className="text-[11px] text-slate-500 text-center">
+          <p className="text-[11px] text-[#5B6B8C] text-center">
             🔒 Your contact information is kept strictly confidential. Our academic desk will reach out during working hours.
           </p>
         </form>

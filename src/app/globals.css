@@ -1,24 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-navy: #0B1F4C;
-  --color-navy-dark: #071434;
-  --color-academy-blue: #1D4ED8;
-  --color-bright-blue: #2563EB;
-  --color-light-blue: #EFF6FF;
-  --color-main-text: #111827;
-  --color-secondary-text: #64748B;
+  --color-white: #FFFFFF;
+  --color-surface-soft: #F5F8FF;
+  --color-ink: #0A1B3D;
+  --color-text-muted: #5B6B8C;
+  --color-main: #2563EB;
+  --color-main-dark: #1E40AF;
+  --color-highlight: #38BDF8;
+  --color-accent: #F59E0B;
+  --color-accent-dark: #D97706;
+  --color-border: #E3EAF7;
   
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 :root {
-  --primary-navy: #0B1F4C;
-  --academy-blue: #1D4ED8;
-  --bright-blue: #2563EB;
-  --light-blue-bg: #EFF6FF;
-  --main-text: #111827;
-  --secondary-text: #64748B;
+  --white: #FFFFFF;
+  --surface-soft: #F5F8FF;
+  --ink: #0A1B3D;
+  --text-muted: #5B6B8C;
+  --main: #2563EB;
+  --main-dark: #1E40AF;
+  --highlight: #38BDF8;
+  --accent: #F59E0B;
+  --accent-dark: #D97706;
+  --border: #E3EAF7;
+  
+  --shadow-subtle: 0 4px 20px -2px rgba(37, 99, 235, 0.06), 0 2px 6px -1px rgba(10, 27, 61, 0.03);
+  --shadow-card: 0 10px 30px -4px rgba(37, 99, 235, 0.08), 0 4px 10px -2px rgba(10, 27, 61, 0.04);
+  --shadow-hover: 0 20px 40px -6px rgba(37, 99, 235, 0.12), 0 8px 16px -3px rgba(10, 27, 61, 0.06);
+  --shadow-glow: 0 0 28px rgba(56, 189, 248, 0.22);
 }
 
 html {
@@ -26,31 +38,39 @@ html {
 }
 
 body {
-  color: var(--main-text);
-  background-color: #FFFFFF;
+  color: var(--ink);
+  background-color: var(--white);
   font-family: var(--font-sans);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom subtle scrollbar */
+/* Headings typography finish */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ink);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+/* Custom soft blue scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #EFF6FF;
+  background: var(--surface-soft);
 }
 ::-webkit-scrollbar-thumb {
-  background: #93C5FD;
+  background: #BFDBFE;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3B82F6;
+  background: var(--main);
 }
 
-/* Accessible focus ring */
+/* Accessible focus ring with highlight */
 *:focus-visible {
-  outline: 2px solid #2563EB;
+  outline: 2px solid var(--highlight);
   outline-offset: 2px;
 }
 

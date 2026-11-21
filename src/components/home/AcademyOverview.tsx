@@ -1,11 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import {
-  ShieldCheck,
   Brain,
   Compass,
   Heart,
-  Award,
   ArrowRight,
   BookOpenCheck
 } from "lucide-react";
@@ -13,40 +11,40 @@ import { institutionData } from "@/data/institutionData";
 
 export default function AcademyOverview() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Mission & Positioning (6 cols) */}
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#1D4ED8] bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#2563EB] bg-[#F5F8FF] border border-[#E3EAF7] px-3.5 py-1 rounded-full">
               About Vidyarthi Bhavan IIT Academy
             </span>
 
-            <h2 className="text-3xl sm:text-4xl font-black text-[#0B1F4C] tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0A1B3D] tracking-tight leading-tight">
               An Educational Sanctuary for Deep Conceptual Clarity & Nation-Building
             </h2>
 
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              Situated in <strong className="text-slate-900">Narasannapeta, Srikakulam District</strong>, Vidyarthi Bhavan IIT Academy was established with a clear mandate: to move beyond superficial rote learning and create students who are intellectually confident, mathematically competent, and morally grounded.
+            <p className="text-[#5B6B8C] text-base leading-relaxed">
+              Situated in <strong className="text-[#0A1B3D] font-semibold">Narasannapeta, Srikakulam District</strong>, Vidyarthi Bhavan IIT Academy was established with a clear mandate: to move beyond superficial rote learning and create students who are intellectually confident, mathematically competent, and morally grounded.
             </p>
 
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              We reject the philosophy of education merely for marks or temporary job literacy. By integrating early <strong>IIT-JEE foundation</strong> training, <strong>artificial intelligence & coding</strong>, and <strong>Bhagavad Gita wisdom</strong>, we prepare students for school success, competitive challenges, and honorable lives.
+            <p className="text-[#5B6B8C] text-sm sm:text-base leading-relaxed">
+              We reject the philosophy of education merely for marks or temporary job literacy. By integrating early <strong className="text-[#0A1B3D] font-semibold">IIT-JEE foundation</strong> training, <strong className="text-[#0A1B3D] font-semibold">artificial intelligence & coding</strong>, and <strong className="text-[#0A1B3D] font-semibold">Bhagavad Gita wisdom</strong>, we prepare students for school success, competitive challenges, and honorable lives.
             </p>
 
             {/* Core Values / 6 Pillars */}
             <div className="pt-2">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#5B6B8C] mb-3">
                 The Six Pillars of Our Institutional Philosophy:
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
                 {institutionData.pillars.map((pillar) => (
                   <div
                     key={pillar}
-                    className="p-3 rounded-xl bg-blue-50/70 border border-blue-100 flex items-center gap-2"
+                    className="p-3 rounded-xl bg-[#F5F8FF] border border-[#E3EAF7] flex items-center gap-2.5 hover:border-[#2563EB]/40 transition-colors duration-200"
                   >
-                    <div className="w-2 h-2 rounded-full bg-[#1D4ED8]" />
-                    <span className="text-xs font-bold text-[#0B1F4C]">{pillar}</span>
+                    <div className="w-2 h-2 rounded-full bg-[#38BDF8]" />
+                    <span className="text-xs font-bold text-[#0A1B3D]">{pillar}</span>
                   </div>
                 ))}
               </div>
@@ -55,60 +53,60 @@ export default function AcademyOverview() {
             <div className="pt-4 flex items-center gap-4">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 bg-[#0B1F4C] hover:bg-[#123075] text-white font-bold text-sm px-6 py-3 rounded-xl transition shadow-md"
+                className="inline-flex items-center gap-2 bg-[#0A1B3D] hover:bg-[#1E40AF] text-white font-bold text-sm px-6 py-3 rounded-xl shadow-[0_4px_14px_rgba(10,27,61,0.18)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
               >
                 <span>Read Full Academy History & Vision</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 text-[#38BDF8]" />
               </Link>
             </div>
           </div>
 
           {/* Right Column: Visual Infographic Cards (6 cols) */}
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-sm space-y-3">
-              <div className="w-12 h-12 rounded-xl bg-[#1D4ED8] text-white flex items-center justify-center shadow-md">
+            <div className="p-6 rounded-2xl bg-white border border-[#E3EAF7] shadow-[0_4px_20px_rgba(37,99,235,0.06)] hover:shadow-[0_12px_30px_rgba(37,99,235,0.12)] hover:-translate-y-0.5 transition-all duration-300 space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#2563EB] text-white flex items-center justify-center shadow-[0_4px_12px_rgba(37,99,235,0.25)]">
                 <Brain className="w-6 h-6" />
               </div>
-              <h3 className="font-extrabold text-lg text-[#0B1F4C]">
+              <h3 className="font-bold text-lg text-[#0A1B3D]">
                 First-Principles Learning
               </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
+              <p className="text-xs text-[#5B6B8C] leading-relaxed">
                 Concepts in Mathematics and Sciences are developed from foundational intuition before memorizing formulas.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-sm space-y-3">
-              <div className="w-12 h-12 rounded-xl bg-[#0B1F4C] text-white flex items-center justify-center shadow-md">
+            <div className="p-6 rounded-2xl bg-white border border-[#E3EAF7] shadow-[0_4px_20px_rgba(37,99,235,0.06)] hover:shadow-[0_12px_30px_rgba(37,99,235,0.12)] hover:-translate-y-0.5 transition-all duration-300 space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#0A1B3D] text-[#38BDF8] flex items-center justify-center shadow-[0_4px_12px_rgba(10,27,61,0.2)]">
                 <BookOpenCheck className="w-6 h-6" />
               </div>
-              <h3 className="font-extrabold text-lg text-[#0B1F4C]">
+              <h3 className="font-bold text-lg text-[#0A1B3D]">
                 IIT Foundation in High School
               </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
+              <p className="text-xs text-[#5B6B8C] leading-relaxed">
                 Structured curriculum from Classes 6 through 10 designed to remove exam fear and cultivate competitive reasoning.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-sm space-y-3">
-              <div className="w-12 h-12 rounded-xl bg-[#2563EB] text-white flex items-center justify-center shadow-md">
+            <div className="p-6 rounded-2xl bg-white border border-[#E3EAF7] shadow-[0_4px_20px_rgba(37,99,235,0.06)] hover:shadow-[0_12px_30px_rgba(37,99,235,0.12)] hover:-translate-y-0.5 transition-all duration-300 space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#1E40AF] text-white flex items-center justify-center shadow-[0_4px_12px_rgba(30,64,175,0.25)]">
                 <Compass className="w-6 h-6" />
               </div>
-              <h3 className="font-extrabold text-lg text-[#0B1F4C]">
+              <h3 className="font-bold text-lg text-[#0A1B3D]">
                 Future AI & Innovation
               </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
+              <p className="text-xs text-[#5B6B8C] leading-relaxed">
                 Modern coding and algorithmic logic training preparing students for tomorrow's technology-driven world.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-sm space-y-3">
-              <div className="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center shadow-md">
+            <div className="p-6 rounded-2xl bg-white border border-[#E3EAF7] shadow-[0_4px_20px_rgba(37,99,235,0.06)] hover:shadow-[0_12px_30px_rgba(37,99,235,0.12)] hover:-translate-y-0.5 transition-all duration-300 space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#F59E0B] text-white flex items-center justify-center shadow-[0_4px_12px_rgba(245,158,11,0.25)]">
                 <Heart className="w-6 h-6" />
               </div>
-              <h3 className="font-extrabold text-lg text-[#0B1F4C]">
+              <h3 className="font-bold text-lg text-[#0A1B3D]">
                 Indian Values & Gita Wisdom
               </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
+              <p className="text-xs text-[#5B6B8C] leading-relaxed">
                 Character building, filial respect, yoga, and civic responsibility forming the ethical backbone of our students.
               </p>
             </div>
