@@ -19,7 +19,7 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
     studentName: "",
     parentName: "",
     mobileNumber: "",
-    interestedProgram: initialProgram || "IIT-JEE Foundation Program",
+    interestedProgram: initialProgram || "IIT & NEET Foundations (Classes 6-10)",
     currentClass: "Class 7",
     message: "",
     honeypot: "",
@@ -78,7 +78,7 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
         studentName: "",
         parentName: "",
         mobileNumber: "",
-        interestedProgram: "IIT-JEE Foundation Program",
+        interestedProgram: "IIT & NEET Foundations (Classes 6-10)",
         currentClass: "Class 7",
         message: "",
         honeypot: "",
@@ -213,13 +213,14 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
                 onChange={handleChange}
                 className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200 bg-white"
               >
+                <option value="Pre-Primary">Pre-Primary (Delhi Publication)</option>
+                <option value="Primary (1-4)">Primary (Classes 1 - 4)</option>
                 <option value="Class 5">Class 5</option>
                 <option value="Class 6">Class 6</option>
                 <option value="Class 7">Class 7</option>
                 <option value="Class 8">Class 8</option>
                 <option value="Class 9">Class 9</option>
                 <option value="Class 10">Class 10</option>
-                <option value="Primary (1-4)">Primary (Classes 1 - 4)</option>
               </select>
             </div>
           </div>
@@ -235,11 +236,13 @@ export default function EnquiryForm({ initialProgram = "" }: { initialProgram?: 
               onChange={handleChange}
               className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-[#E3EAF7] text-[#0A1B3D] focus:border-[#2563EB] focus:ring-2 focus:ring-[#38BDF8]/30 outline-none transition-all duration-200 bg-white"
             >
-              <option value="IIT-JEE Foundation Program">IIT-JEE Foundation Program (Classes 6-10)</option>
-              <option value="Comprehensive School Academics">Comprehensive School Academics</option>
-              <option value="AI, Coding & Innovation">AI, Coding & Innovation Curriculum</option>
-              <option value="Olympiad Mentorship">Olympiad & Talent Mentorship</option>
-              <option value="Holistic Development & Yoga">Holistic Development, Yoga & Martial Arts</option>
+              <option value="IIT & NEET Foundations (Classes 6-10)">IIT & NEET Foundations (Classes 6-10)</option>
+              <option value="Civils & Olympiads Foundations (with Abacus)">Civils & Olympiads Foundations (with Abacus)</option>
+              <option value="CBSE & State Board Curriculum (NCERT)">CBSE & State Board Curriculum (NCERT)</option>
+              <option value="100% Pre-Primary Program (Delhi Publication)">100% Pre-Primary Program (Delhi Publication)</option>
+              <option value="STEM & Coding Program (ULO Bangalore)">STEM & Coding Program (ULO Bangalore)</option>
+              <option value="Spiritual Education & Vedic Chanting">Spiritual Education & Vedic Chanting</option>
+              <option value="Life Skills, Martial Arts & Traditional Arts">Life Skills, Martial Arts & Traditional Arts</option>
             </select>
           </div>
 

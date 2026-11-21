@@ -5,7 +5,8 @@ import {
   Compass,
   Heart,
   ArrowRight,
-  BookOpenCheck
+  BookOpenCheck,
+  Sparkles
 } from "lucide-react";
 import { institutionData } from "@/data/institutionData";
 
@@ -16,20 +17,21 @@ export default function AcademyOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Mission & Positioning (6 cols) */}
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#2563EB] bg-[#F5F8FF] border border-[#E3EAF7] px-3.5 py-1 rounded-full">
-              About Vidyarthi Bhavan IIT Academy
-            </span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F5F8FF] border border-[#E3EAF7] text-[#2563EB] text-xs font-bold uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5 text-[#38BDF8]" />
+              <span>{institutionData.secondaryMotto}</span>
+            </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0A1B3D] tracking-tight leading-tight">
               An Educational Sanctuary for Deep Conceptual Clarity & Nation-Building
             </h2>
 
             <p className="text-[#5B6B8C] text-base leading-relaxed">
-              Situated in <strong className="text-[#0A1B3D] font-semibold">Narasannapeta, Srikakulam District</strong>, Vidyarthi Bhavan IIT Academy was established with a clear mandate: to move beyond superficial rote learning and create students who are intellectually confident, mathematically competent, and morally grounded.
+              Situated on <strong className="text-[#0A1B3D] font-semibold">State Bank Street, Narasannapeta, Srikakulam District</strong>, Vidyarthi Bhavan IIT Academy was established to move beyond superficial rote memorization and cultivate students who are intellectually confident, mathematically competent, and morally grounded.
             </p>
 
             <p className="text-[#5B6B8C] text-sm sm:text-base leading-relaxed">
-              We reject the philosophy of education merely for marks or temporary job literacy. By integrating early <strong className="text-[#0A1B3D] font-semibold">IIT-JEE foundation</strong> training, <strong className="text-[#0A1B3D] font-semibold">artificial intelligence & coding</strong>, and <strong className="text-[#0A1B3D] font-semibold">Bhagavad Gita wisdom</strong>, we prepare students for school success, competitive challenges, and honorable lives.
+              We employ a dual pedagogical system—the <strong className="text-[#0A1B3D] font-semibold">Descriptive Method</strong> for concept depth and derivations, and <strong className="text-[#0A1B3D] font-semibold">Objective Method Programs</strong> for competitive speed. Through our partnership with <strong className="text-[#0A1B3D] font-semibold">ULO Bangalore</strong> for STEM, Python, and the SPEAK communication program, alongside daily <strong className="text-[#0A1B3D] font-semibold">Medha Suktham & Gita chanting</strong>, we build true pillars of Bharat.
             </p>
 
             {/* Core Values / 6 Pillars */}
@@ -68,10 +70,10 @@ export default function AcademyOverview() {
                 <Brain className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-[#0A1B3D]">
-                First-Principles Learning
+                Dual Pedagogy System
               </h3>
               <p className="text-xs text-[#5B6B8C] leading-relaxed">
-                Concepts in Mathematics and Sciences are developed from foundational intuition before memorizing formulas.
+                Descriptive Method for first-principles reasoning combined with Objective Method for competitive test mastery.
               </p>
             </div>
 
@@ -80,10 +82,10 @@ export default function AcademyOverview() {
                 <BookOpenCheck className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-[#0A1B3D]">
-                IIT Foundation in High School
+                IIT, NEET & Civils
               </h3>
               <p className="text-xs text-[#5B6B8C] leading-relaxed">
-                Structured curriculum from Classes 6 through 10 designed to remove exam fear and cultivate competitive reasoning.
+                Comprehensive foundation courses, Abacus mental arithmetic, and talent olympiad guidance across all grades.
               </p>
             </div>
 
@@ -92,10 +94,10 @@ export default function AcademyOverview() {
                 <Compass className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-[#0A1B3D]">
-                Future AI & Innovation
+                STEM by ULO Bangalore
               </h3>
               <p className="text-xs text-[#5B6B8C] leading-relaxed">
-                Modern coding and algorithmic logic training preparing students for tomorrow's technology-driven world.
+                Python coding, Scratch 3.0, Code.org, and the SPEAK program for communication and life vision.
               </p>
             </div>
 
@@ -104,10 +106,10 @@ export default function AcademyOverview() {
                 <Heart className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-lg text-[#0A1B3D]">
-                Indian Values & Gita Wisdom
+                Spiritual Heritage & Arts
               </h3>
               <p className="text-xs text-[#5B6B8C] leading-relaxed">
-                Character building, filial respect, yoga, and civic responsibility forming the ethical backbone of our students.
+                Bhagavadhgeetha, Medha Suktham chanting, martial arts, yoga, and Andhra traditional Kolatam.
               </p>
             </div>
           </div>

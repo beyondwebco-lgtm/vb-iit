@@ -34,13 +34,18 @@ export const institutionData = {
   shortName: "VB IIT Academy",
   tagline: "Building the Real Pillars of Bharat",
   motto: "Not just job literacy—but life education.",
-  secondaryMotto: "Strong Foundations · Academic Excellence · Character · Nation Building",
+  secondaryMotto: "More Knowledge with Low Luggage",
+  spiritualAnchor: "HARE RAMA HARE RAMA RAMA RAMA HARE HARE – HARE KRISHNA HARE KRISHNA KRISHNA KRISHNA HARE HARE",
+  pedagogy: {
+    descriptive: "Descriptive Method — Building profound conceptual depth, theoretical clarity, and step-by-step analytical reasoning.",
+    objective: "Objective Method — Speed, MCQ pattern mastery, elimination techniques, and competitive examination readiness."
+  },
   pillars: [
-    "Knowledge",
-    "Character",
-    "Courage",
-    "Compassion",
-    "Leadership",
+    "Civils & Olympiads",
+    "IIT & NEET Foundations",
+    "Spiritual Foundation",
+    "STEM & Life Skills",
+    "Creative Arts",
     "Nation-Building"
   ],
   location: {
@@ -138,123 +143,130 @@ export const institutionData = {
   },
   programs: [
     {
-      id: "iit-jee-foundation",
-      title: "IIT-JEE Foundation Program",
-      subtitle: "Middle & High School Foundation",
+      id: "iit-neet-foundation",
+      title: "IIT & NEET Foundations",
+      subtitle: "Engineering & Medical Dual Foundation (Classes 6-10)",
       targetGroup: "Classes 6 to 10",
-      description: "A meticulously engineered foundation course targeting deep conceptual mastery in Mathematics, Physics, and Chemistry. Personally taught and mentored by Principal Kalepu Satish Kumar.",
+      description: "Rigorous foundation program for engineering and medical aspirants focusing on Mathematics, Physics, Chemistry, and Biology. Personally taught and mentored by Principal Kalepu Satish Kumar utilizing both Descriptive and Objective methodologies.",
       highlights: [
         "Direct classroom mentorship in Mathematics by Principal Kalepu Satish Kumar",
-        "Step-by-step analytical reasoning without excessive pressure",
-        "Conceptual clarity before advanced mathematical problem-solving",
+        "Descriptive Method for formula intuition and step-by-step problem derivation",
+        "Objective Method Programs for MCQ patterns, elimination, and speed",
         "Early preparation for future competitive exams (JEE Main, Advanced, NEET, Olympiads)",
-        "Regular diagnostic assessments with actionable feedback"
+        "Daily Practice Problems (DPP) and regular diagnostic assessments"
       ],
       features: [
-        "Daily Practice Problems (DPP)",
-        "Logical reasoning workshops",
-        "Doubt resolution sessions",
-        "Formula & theorem intuition building"
+        "Descriptive & Objective dual teaching tracks",
+        "Formula & theorem intuition building",
+        "Doubt resolution sessions & student mentoring",
+        "Physics, Chemistry, Biology & Advanced Math focus"
       ],
       icon: "Atom"
     },
     {
-      id: "school-academics",
-      title: "Comprehensive School Academics",
-      subtitle: "State & National Standard Curriculum",
-      targetGroup: "Primary to High School",
-      description: "Holistic academic education instilling subject fundamentals, disciplined study habits, scientific temperament, and language proficiency.",
-      highlights: [
-        "Strong foundation across Mathematics, Sciences, Social Studies & Languages",
-        "Active learning methods emphasizing questioning and conceptual understanding",
-        "Continuous assessment focused on improvement rather than mere rote ranking",
-        "Supportive, encouraging environment for all learning speeds"
-      ],
-      features: [
-        "Structured daily timetable",
-        "Language & communication enhancement",
-        "Continuous comprehensive evaluation",
-        "Teacher-student mentorship ratio"
-      ],
-      icon: "BookOpen"
-    },
-    {
-      id: "ai-coding-innovation",
-      title: "AI, Coding & Innovation",
-      subtitle: "Future-Ready Skills for the 21st Century",
-      targetGroup: "High School & Middle School",
-      description: "Empowering young students with modern technology, computational thinking, algorithms, Artificial Intelligence principles, and creative problem solving.",
-      highlights: [
-        "Exposure to cutting-edge AI and computer science concepts",
-        "Hands-on coding exercises promoting algorithmic reasoning",
-        "Creative thinking projects connecting technology with real-world problems",
-        "Bridging classroom theory with modern industrial advancement"
-      ],
-      features: [
-        "Computer laboratory practice",
-        "Introduction to Python & logic",
-        "AI literacy & ethics",
-        "Tech exhibitions & project showcases"
-      ],
-      icon: "Cpu"
-    },
-    {
-      id: "olympiad-competitive",
-      title: "Olympiad & Talent Mentorship",
-      subtitle: "National & State Competitive Exposure",
+      id: "civils-olympiad-foundations",
+      title: "Civils & Olympiads Foundations",
+      subtitle: "Civil Services Orientation, Reasoning & Abacus",
       targetGroup: "Classes 5 to 10",
-      description: "Specialized training for Science, Mathematics, and Cyber Olympiads, training students to tackle multi-concept challenges with confidence.",
+      description: "Early orientation towards Civil Services examination thinking, public affairs, and competitive reasoning, coupled with Abacus mental arithmetic and talent olympiad mentorship.",
       highlights: [
-        "Focused guidance for National Science Olympiads and Math Olympiads",
-        "Techniques for time management and intelligent option elimination",
-        "Encouraging intellectual boldness and curiosity",
-        "Comprehensive mock assessments under timed conditions"
+        "Early Civils Foundations focusing on analytical thinking and civic awareness",
+        "National & International Olympiad preparation across Science and Math",
+        "Logical Reasoning & Mental Ability modules",
+        "Abacus training for lightning mental calculation and concentration",
+        "School, District, State & National level competition participation"
       ],
       features: [
-        "Olympiad question banks",
-        "Analytical challenge sheets",
-        "Peer study circles",
-        "Recognition & talent certificates"
+        "Abacus speed calculation drills",
+        "Analytical challenge problem sets",
+        "Civic governance & current affairs awareness",
+        "Talent certificates and Olympiad question banks"
       ],
       icon: "Trophy"
     },
     {
-      id: "values-gita-heritage",
-      title: "Indian Heritage & Bhagavad Gita Wisdom",
-      subtitle: "Character Building & Moral Anchoring",
-      targetGroup: "All Students",
-      description: "Imparting timeless Indian values, respect for parents and teachers, civic ethics, self-discipline, and philosophical wisdom from the Bhagavad Gita.",
+      id: "cbse-state-ncert",
+      title: "CBSE & State Board Curriculum",
+      subtitle: "State Board with NCERT & 100% Pre-Primary Delhi Publication",
+      targetGroup: "Pre-Primary to Class 10",
+      description: "Structured academic standards blending CBSE frameworks, State Board with NCERT textbooks, and a 100% dedicated Pre-Primary program from Delhi Publication under our 'More Knowledge with Low Luggage' philosophy.",
       highlights: [
-        "Bhagavad Gita recitation and understanding of core ethical verses",
-        "Developing mental balance, inner resilience, and self-control",
-        "Instilling profound respect for elders, culture, and nature",
-        "Nation-building ethos: contributing positively to society and Bharat"
+        "‘More Knowledge with Low Luggage’ philosophy reducing student backpack burden",
+        "100% Pre-Primary Program from Delhi Publication",
+        "State Board seamlessly integrated with NCERT syllabus",
+        "CBSE academic curriculum with continuous comprehensive evaluation",
+        "Strong foundation across Mathematics, Sciences, Social Studies & Languages"
       ],
       features: [
-        "Weekly value education periods",
-        "Cultural celebrations & discourses",
-        "Civic awareness campaigns",
-        "Reflective character journaling"
+        "Delhi Publication pre-primary curriculum",
+        "NCERT-aligned conceptual textbooks",
+        "Low luggage classroom learning model",
+        "Continuous evaluation without stressful cramming"
+      ],
+      icon: "BookOpen"
+    },
+    {
+      id: "stem-coding-ulo",
+      title: "STEM & Coding Program (ULO Bangalore)",
+      subtitle: "Python, Web Development, Scratch 3.0 & Code.org",
+      targetGroup: "Classes 4 to 10",
+      description: "Future-ready technology training in partnership with ULO Bangalore, introducing students to computational logic, algorithmic thinking, web technologies, and coding.",
+      highlights: [
+        "Specialized STEM-based curriculum from ULO Bangalore",
+        "Python Coding Program for algorithmic problem solving",
+        "Web Development Program (HTML, CSS, logic)",
+        "Scratch 3.0 visual block coding for creative animations & games",
+        "Code.org computational thinking curriculum"
+      ],
+      features: [
+        "Hands-on computer laboratory practice",
+        "Python & algorithmic logic drills",
+        "Web page design & project creation",
+        "Annual tech exhibitions & innovation showcases"
+      ],
+      icon: "Cpu"
+    },
+    {
+      id: "spiritual-education",
+      title: "Spiritual Education & Vedic Chanting",
+      subtitle: "Bhagavadhgeetha, Vishnu Sahasranamam & Medha Suktham",
+      targetGroup: "All Students",
+      description: "Nurturing the soul and character through timeless Bharatiya spiritual heritage, sacred Suktham chanting for intellect, and philosophical discourses.",
+      highlights: [
+        "Bhagavadhgeetha Lessons and Antharyaami Lectures",
+        "Vishnu Sahasranamalu Recitation for mental tranquility",
+        "Rudra Namakam & Chamakam Recitation",
+        "Medha Suktham Chanting (sacred prayers for sharp intellect, memory & concentration)",
+        "Sri Suktham, Mantrapushpam & Daily Slokas Chanting",
+        "Hare Rama Hare Krishna Mahamantra chanting for peace and focus"
+      ],
+      features: [
+        "Daily morning slokas & Medha Suktham chanting",
+        "Weekly Bhagavadhgeetha study circles",
+        "Spiritual lectures on Antharyaami & ethical living",
+        "Mantrapushpam & Vishnu Sahasranamam sessions"
       ],
       icon: "Heart"
     },
     {
-      id: "holistic-health-martial-arts",
-      title: "Yoga, Martial Arts & Life Skills",
-      subtitle: "Physical Health & Practical Readiness",
+      id: "life-skills-creative",
+      title: "Life Skills, Creative Arts & Traditions",
+      subtitle: "SPEAK (ULO Bangalore), Martial Arts, Kolatam & Editorial Writing",
       targetGroup: "All Students",
-      description: "Developing physically healthy, disciplined, and alert young individuals through traditional Yoga, martial arts self-defense, and practical life competencies.",
+      description: "Comprehensive personal development combining ULO Bangalore's SPEAK communication program, financial and stress management, student journalism, martial arts, and traditional Andhra folk dances.",
       highlights: [
-        "Daily Yoga practice for mental focus, breathing, and flexibility",
-        "Martial arts training for self-defense, physical stamina, and reflexes",
-        "Practical life education, road safety, and social awareness",
-        "Building resilience, confidence, and leadership temperament"
+        "SPEAK Program from ULO Bangalore (public speaking, vision for life, time & finance management)",
+        "Telugu & English Editorial Pages authored by students to build critical writing",
+        "Science Extrapolates, Art & Craft Innovations, Calligraphy & Drawing",
+        "Student field trips and School, District, State & National level competitions",
+        "Martial Arts, Sports, Games & Yoga for physical stamina",
+        "Traditional cultural dances: Semi-Classical, Folk, Cultural & Kolatam"
       ],
       features: [
-        "Certified martial arts instruction",
-        "Yoga & pranayama morning routines",
-        "First-aid and safety workshops",
-        "Outdoor sports and stamina drills"
+        "Certified martial arts & daily yoga instruction",
+        "Student-written editorial publications (Telugu & English)",
+        "Traditional Kolatam & folk dance training",
+        "Life vision, stress management & financial literacy workshops"
       ],
       icon: "Shield"
     }

@@ -95,3 +95,59 @@ Directly confirmed by Founder / Director Arangi Govinda Babu on 21/11/2026:
 4. **+91 79810 74545** — General Enquiries Desk
 
 All 4 numbers and the exact State Bank Street address have been integrated across the website components, footers, admissions sections, interactive click-to-call links, and metadata.
+
+
+---
+
+## 4. Comprehensive Curriculum & Pedagogical System (Direct Input from Founder Govinda Babu - Nov 2026)
+
+Directly confirmed and communicated by Founder Arangi Govinda Babu:
+
+### 4.1 Institutional Motto & Teaching Pedagogy
+- **Secondary Motto:** *"More Knowledge with Low Luggage"* (reducing bag burden, focusing on real learning).
+- **Dual Pedagogy System:**
+  1. **Descriptive Method:** Conceptual foundation, derivations, structured explanations, deep subject insight, and analytical reasoning.
+  2. **Objective Method Programs:** MCQ pattern mastery, elimination techniques, speed arithmetic, and competitive test performance.
+
+### 4.2 School Curriculum Framework
+- **CBSE Academic Curriculum:** Comprehensive continuous evaluation.
+- **100% Pre-Primary Program:** Dedicated program from Delhi Publication.
+- **State Board with NCERT Syllabus:** High-standard integration of State Board and NCERT curriculum frameworks.
+
+### 4.3 Foundation Streams
+- **Civils Foundations:** Early administrative and public affairs orientation, analytical governance understanding.
+- **Olympiads Foundations:** National and international Olympiad preparation in Math and Science.
+- **IIT & NEET Foundations:** Dual engineering & medical foundation for high-school students.
+- **Reasonings & Abacus:** Mental calculation, logic building, and speed arithmetic drills.
+
+### 4.4 Spiritual Education & Bharatiya Vedic Heritage
+- **Spiritual Anchor / Mahamantra:** *"HARE RAMA HARE RAMA RAMA RAMA HARE HARE – HARE KRISHNA HARE KRISHNA KRISHNA KRISHNA HARE HARE"*
+- **Vedic Recitations & Sukthams:**
+  - Medha Suktham Chanting (sacred prayers for sharp intellect, memory retention & mental focus)
+  - Sri Suktham Chanting
+  - Mantrapushpam Chanting
+  - Daily Morning Slokas Chanting
+- **Sacred Texts & Lectures:**
+  - Bhagavadhgeetha Lessons
+  - Antharyaami Lectures
+  - Vishnu Sahasranamalu Recitation
+  - Rudra Namakam & Chamakam Recitation
+
+### 4.5 STEM & Technology Programs (in Collaboration with ULO Bangalore)
+- **STEM-based Program:** Dedicated hands-on curriculum from ULO Bangalore.
+- **Python Coding Program:** Algorithmic thinking and problem solving.
+- **Web Development Program:** Modern web design fundamentals.
+- **Scratch 3.0 Coding Program:** Visual block coding for interactive animations.
+- **Code.org Program:** Foundational computational logic.
+
+### 4.6 Life Skills & Personality Development
+- **SPEAK Program (ULO Bangalore):** Public speaking, conversational confidence, and presentation.
+- **Developing & Pursuing Vision for Life:** Goal setting and personal discipline.
+- **Practical Life Management:** Time Management Skills, Understanding Others, Finance Management, and Stress Management.
+
+### 4.7 Creative Skills, Arts & Traditional Culture
+- **Student Publications:** Telugu & English Editorial Pages authored by students.
+- **Creative Arts:** Science Extrapolates, Art & Craft Innovations, Calligraphy, and Drawing Skills.
+- **Competitions & Field Trips:** Educational field excursions; active participation in School, District, State, and National level competitions.
+- **Physical Stamina & Sports:** Martial Arts, Sports, Games & Daily Yoga.
+- **Traditional Andhra Dance & Culture:** Semi-Classical, Folk, Cultural dances, and traditional Kolatam.

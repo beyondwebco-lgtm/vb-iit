@@ -10,14 +10,16 @@ import {
   Shield,
   CheckCircle2,
   ArrowRight,
-  GraduationCap
+  GraduationCap,
+  Sparkles,
+  BookMarked
 } from "lucide-react";
 import { institutionData } from "@/data/institutionData";
 
 export const metadata: Metadata = {
-  title: "Academics & IIT Foundation | Classes 6-10",
+  title: "Academics & Curriculum | Dual Pedagogy & Foundations",
   description:
-    "Explore the rigorous IIT-JEE Foundation program personally taught by Principal Kalepu Satish Kumar, comprehensive school curriculum, AI & coding courses at VB IIT Academy.",
+    "Explore the rigorous IIT & NEET Foundation, Civils & Olympiads, CBSE & State NCERT curriculum, ULO Bangalore STEM & Coding, and Spiritual Education at Vidyarthi Bhavan IIT Academy.",
 };
 
 const ICON_MAP: Record<string, React.ReactNode> = {
@@ -36,14 +38,83 @@ export default function AcademicsPage() {
       <section className="bg-gradient-to-br from-[#0A1B3D] via-[#0A1B3D] to-[#1E40AF] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
-            <span>Academic Excellence & Curriculum</span>
+            <span>Academic Philosophy: {institutionData.secondaryMotto}</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight max-w-3xl">
-            Intellectual Rigor, Conceptual Depth & Future Readiness
+            Intellectual Rigor, Dual Pedagogy & Bharatiya Character
           </h1>
           <p className="text-[#E3EAF7] text-base sm:text-lg max-w-2xl leading-relaxed font-normal">
-            Our curriculum balances board examinations with hands-on IIT-JEE foundation training, AI literacy, and moral anchoring—eliminating cramming in favor of genuine understanding.
+            Our academic ecosystem balances both Descriptive and Objective methodologies across IIT-JEE, NEET, Civils, CBSE, and State Board with NCERT syllabus—guided by our guiding motto: <strong className="text-white font-semibold">“{institutionData.secondaryMotto}”</strong>.
           </p>
+        </div>
+      </section>
+
+      {/* Dual Pedagogy Highlight Section */}
+      <section className="py-12 bg-[#F5F8FF] border-b border-[#E3EAF7]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-2xl mx-auto mb-8 space-y-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#2563EB] bg-white border border-[#E3EAF7] px-3 py-1 rounded-full">
+              Teaching Methodology
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0A1B3D]">
+              Dual Pedagogical Framework
+            </h2>
+            <p className="text-xs sm:text-sm text-[#5B6B8C]">
+              Every subject is mastered through two complementary pathways ensuring both deep understanding and high-speed competitive performance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E3EAF7] shadow-[0_4px_16px_rgba(37,99,235,0.06)] space-y-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#2563EB]/10 text-[#2563EB] text-xs font-bold uppercase">
+                <BookMarked className="w-4 h-4" />
+                <span>Pedagogy Track 1</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#0A1B3D]">Descriptive Method</h3>
+              <p className="text-sm text-[#5B6B8C] leading-relaxed">
+                {institutionData.pedagogy.descriptive}
+              </p>
+              <ul className="text-xs space-y-2 text-[#0A1B3D] pt-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Formula derivation from first principles</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Structured descriptive answers and essay articulation</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Telugu & English editorial page writing</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E3EAF7] shadow-[0_4px_16px_rgba(37,99,235,0.06)] space-y-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#38BDF8]/20 text-[#0A1B3D] text-xs font-bold uppercase">
+                <Trophy className="w-4 h-4 text-[#2563EB]" />
+                <span>Pedagogy Track 2</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#0A1B3D]">Objective Method Programs</h3>
+              <p className="text-sm text-[#5B6B8C] leading-relaxed">
+                {institutionData.pedagogy.objective}
+              </p>
+              <ul className="text-xs space-y-2 text-[#0A1B3D] pt-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>MCQ pattern recognition & options elimination</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Abacus speed arithmetic & mental reasoning drills</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Timed mock tests matching national Olympiad standards</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -118,7 +189,7 @@ export default function AcademicsPage() {
                   {/* Right Column: Key Features & Pedagogy Card (5 cols) */}
                   <div className="lg:col-span-5 bg-white p-6 rounded-2xl border border-[#E3EAF7] shadow-sm space-y-4">
                     <h3 className="font-extrabold text-base text-[#0A1B3D] border-b border-[#E3EAF7] pb-2">
-                      Pedagogical Features
+                      Program Components & Features
                     </h3>
                     <div className="space-y-2.5">
                       {program.features.map((feature, fIdx) => (
@@ -132,14 +203,14 @@ export default function AcademicsPage() {
                       ))}
                     </div>
 
-                    {program.id === "iit-jee-foundation" && (
+                    {program.id === "iit-neet-foundation" && (
                       <div className="mt-4 p-3.5 rounded-xl bg-[#F5F8FF] border border-[#E3EAF7] text-xs text-[#0A1B3D] space-y-1">
                         <p className="font-bold flex items-center gap-1.5 text-[#2563EB]">
                           <GraduationCap className="w-4 h-4 text-[#38BDF8]" />
                           Classroom Mentorship Note:
                         </p>
                         <p className="text-[#5B6B8C] leading-relaxed">
-                          Personally taught by Principal Kalepu Satish Kumar with systematic problem-solving methods and conceptual intuition.
+                          Personally taught by Principal Kalepu Satish Kumar utilizing systematic problem-solving methods, formula derivations, and diagnostic mock testing.
                         </p>
                       </div>
                     )}
@@ -148,6 +219,37 @@ export default function AcademicsPage() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* Spiritual Education & Mahamantra Anchor Banner */}
+      <section className="py-16 bg-gradient-to-r from-[#0A1B3D] via-[#1E40AF] to-[#0A1B3D] text-white relative overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#38BDF8] text-xs font-semibold">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Spiritual Foundation & Bharatiya Sanskar</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
+            Vedic Chanting, Sukthams & Gita Wisdom
+          </h2>
+
+          <p className="text-sm sm:text-base text-[#E3EAF7] max-w-3xl mx-auto leading-relaxed">
+            Every school day opens with sacred recitations designed to instill tranquility, focus, and intellectual brilliance:
+          </p>
+
+          <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 max-w-3xl mx-auto">
+            <p className="font-mono text-sm sm:text-lg text-[#F59E0B] font-bold tracking-wide">
+              {institutionData.spiritualAnchor}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs font-medium">
+            <div className="p-3 rounded-xl bg-white/5 border border-white/10">Medha Suktham (Intellect & Memory)</div>
+            <div className="p-3 rounded-xl bg-white/5 border border-white/10">Bhagavadhgeetha Lessons</div>
+            <div className="p-3 rounded-xl bg-white/5 border border-white/10">Vishnu Sahasranamam</div>
+            <div className="p-3 rounded-xl bg-white/5 border border-white/10">Rudra Namakam & Chamakam</div>
+          </div>
         </div>
       </section>
 
