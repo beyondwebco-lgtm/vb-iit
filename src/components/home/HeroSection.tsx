@@ -124,41 +124,65 @@ export default function HeroSection() {
               {/* Outer decorative soft glow */}
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#2563EB] to-[#38BDF8] opacity-25 blur-xl" />
 
-              <div className="relative bg-white text-[#0A1B3D] rounded-3xl p-6 shadow-[0_20px_40px_rgba(10,27,61,0.18)] border border-[#E3EAF7] space-y-5">
-                {/* Director Photo with Verified Tag */}
-                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#F5F8FF] shadow-sm border border-[#E3EAF7]">
+              <div className="relative bg-white text-[#0A1B3D] rounded-3xl p-6 shadow-[0_20px_40px_rgba(10,27,61,0.18)] border border-[#E3EAF7] space-y-4">
+                {/* Header with Official School Logo & Badges */}
+                <div className="flex items-center justify-between border-b border-[#E3EAF7] pb-3">
+                  <div className="flex items-center gap-2.5">
+                    <div className="relative w-10 h-10 shrink-0 rounded-xl bg-white p-0.5 border border-[#E3EAF7] shadow-sm">
+                      <Image
+                        src="/images/branding/logo.png"
+                        alt="Vidyarthi Bhavan IIT Academy Logo"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p className="font-extrabold text-sm text-[#0A1B3D] leading-tight">VB IIT ACADEMY</p>
+                      <p className="text-[10px] font-bold text-[#2563EB] tracking-wider uppercase">Narasannapeta</p>
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#0A1B3D] bg-[#F5F8FF] border border-[#E3EAF7] px-2 py-0.5 rounded-md">
+                    Complete A/C
+                  </span>
+                </div>
+
+                {/* Director Photo with Verified Tag at IIT Madras */}
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#0A1B3D] shadow-sm border border-[#E3EAF7]">
                   <Image
-                    src={director.image || "/images/leadership/director_arangi_govinda_babu.png"}
-                    alt="Arangi Govinda Babu, Founder / Director of Vidyarthi Bhavan IIT Academy"
+                    src="/images/leadership/director_at_iit_madras.jpg"
+                    alt="Founder & Director Arangi Govinda Babu at Indian Institute of Technology Madras (IIT Madras)"
                     fill
-                    className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                    className="object-cover object-center hover:scale-105 transition-transform duration-500"
                     priority
                   />
-                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0A1B3D] via-[#0A1B3D]/80 to-transparent p-4 text-white">
-                    <p className="font-extrabold text-lg leading-tight">{director.name}</p>
-                    <p className="text-xs font-semibold text-[#38BDF8] uppercase tracking-wider">
-                      {director.role} • {institutionData.shortName}
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0A1B3D] via-[#0A1B3D]/80 to-transparent p-3.5 text-white">
+                    <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-[#2563EB]/80 text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider mb-1">
+                      <span>IIT Foundation Visionary</span>
+                    </div>
+                    <p className="font-extrabold text-base leading-tight">{director.name}</p>
+                    <p className="text-xs text-[#E3EAF7] font-medium">
+                      Founder & Director • At IIT Madras Campus
                     </p>
                   </div>
                 </div>
 
                 {/* Director Verified Quote */}
-                <div className="relative pl-4 border-l-4 border-[#2563EB] py-1">
-                  <p className="text-xs sm:text-sm text-[#5B6B8C] italic font-medium leading-relaxed">
+                <div className="relative pl-3.5 border-l-4 border-[#2563EB] py-0.5">
+                  <p className="text-xs text-[#5B6B8C] italic font-medium leading-relaxed">
                     “{director.quote}”
                   </p>
                 </div>
 
                 {/* Principal Quick Feature Card */}
-                <div className="p-3.5 rounded-2xl bg-[#F5F8FF] border border-[#E3EAF7] flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#0A1B3D] to-[#2563EB] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-[0_4px_12px_rgba(37,99,235,0.2)]">
+                <div className="p-3 rounded-2xl bg-[#F5F8FF] border border-[#E3EAF7] flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0A1B3D] to-[#2563EB] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-[0_4px_12px_rgba(37,99,235,0.2)]">
                     {principal.initials}
                   </div>
                   <div className="text-xs">
                     <p className="font-bold text-[#0A1B3D]">{principal.name}</p>
-                    <p className="text-[#5B6B8C] font-medium">Principal & Math Faculty</p>
+                    <p className="text-[#5B6B8C] font-medium text-[11px]">Principal & High-School Mathematics Faculty</p>
                     <p className="text-[#2563EB] font-semibold text-[11px] mt-0.5">
-                      Leading hands-on from the classroom
+                      Leading conceptual derivations from the classroom
                     </p>
                   </div>
                 </div>

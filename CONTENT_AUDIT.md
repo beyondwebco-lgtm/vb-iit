@@ -165,3 +165,54 @@ Directly confirmed by Founder Arangi Govinda Babu on 23/11/2026:
 
 ### 5.2 Campus Infrastructure Feature
 - **Complete A/C Campus:** The entire school campus and academic classrooms are 100% air-conditioned, providing a climate-controlled, dust-free, and noise-buffered learning environment optimized for student comfort and deep concentration year-round.
+
+
+---
+
+## 6. Visual Asset Audit & Placement Mapping (Provided Assets - Nov 2026)
+
+Official institutional logos and photography provided from school archives:
+
+### 6.1 Official Institutional Logos
+1. **VB ONLY LOGO.png:**
+   - **Identity:** Official emblem of Vidyarthi Bhavan IIT Academy.
+   - **Motifs:** Flaming torch with sacred "Om" / "శ్రీ", open book with Telugu/Sanskrit script, sacred Shanku, golden lotus petals, laurel wreath of academic excellence, and green/gold **"VB-IIT"** banner.
+   - **Placements:** Navigation header, mobile menu, footer, OpenGraph metadata, and browser tab favicon (`src/app/icon.png`, `public/icon.png`, `public/images/branding/logo.png`).
+2. **WONDER KIDZ PLAY SCHOOL LOGO.png:**
+   - **Identity:** Official brand logo for the Pre-Primary wing — *Wonder Kidz Play School Narasannapeta*.
+   - **Placement:** Pre-Primary academic curriculum section, footer, and campus overview.
+3. **PLAY GROUND.png:**
+   - **Identity:** Official outdoor campus banner featuring school name in Telugu ("విధ్యార్థి భవన్ VB-IIT"), admissions desk numbers, and playground survey boundaries.
+   - **Placement:** Campus Facilities page (`school_playground_banner.jpg`).
+
+### 6.2 Photographic Documentation & Placements
+1. **Director at IIT Madras (`director_at_iit_madras.jpg`):**
+   - High-resolution photograph of Founder & Director Arangi Govinda Babu standing at the grand entrance of Indian Institute of Technology Madras (IIT Madras).
+   - *Placement:* Hero Section, Leadership Highlight, and IIT-JEE Foundation curriculum.
+2. **State Pencak Silat Championship Winners (`martial_arts_champions.jpg`):**
+   - Students holding 1st place championship trophy and medals in front of the official Vidyarthi Bhavan school banner.
+   - *Placement:* Achievements page and Home page campus showcase.
+3. **Inter-School Karate Belt Grading (`karate_belt_grading.jpg`):**
+   - Students in karate uniforms with yellow/orange/green grading certificates, trophies, and martial arts masters.
+   - *Placement:* Achievements page and Physical Wellness facilities.
+4. **District AI & Olympiad Competition Winners (`district_competition_winners.jpg`):**
+   - High-school and middle-school student achievers holding merit trophies from the District Level AI Academy and Olympiad tests.
+   - *Placement:* Achievements page and Olympiad curriculum.
+5. **District Spelling Bee Trophy (`spelling_bee_award.jpg`):**
+   - Founder Arangi Govinda Babu presenting the 1st place trophy to student champion.
+   - *Placement:* Achievements page.
+6. **Classroom Mentorship & Student Honors (`childrens_day_boys_awards.jpg` & `childrens_day_girls_awards.jpg`):**
+   - High school boys and girls wings holding silver plates and merit honors with teaching faculty.
+   - *Placement:* Achievements page and About page Principal mentorship section.
+7. **Dedicated School Bus Fleet (`school_transport_bus.jpg`):**
+   - Official yellow school bus with students in traditional attire.
+   - *Placement:* Facilities page (Transportation) and Home page campus showcase.
+8. **Faculty & Staff Sankranti Celebrations (`faculty_sankranti_celebration.jpg`):**
+   - All women teaching faculty in traditional silk sarees around the Bhogi bonfire and Rangoli.
+   - *Placement:* About Us page (Dedicated Faculty Team).
+9. **Classical Dance & Heritage (`classical_dance_culture.jpg`):**
+   - Founder Arangi Govinda Babu with girl students in classical dance costumes (Kuchipudi/Bharatanatyam).
+   - *Placement:* Academics page (Spiritual & Cultural Education).
+10. **Educational Nature & Science Field Trips (`nature_field_trip.jpg` & `science_field_trip_solar.jpg`):**
+    - Sunnapugadda eco-nature trip and Solar Energy Science park excursions.
+    - *Placement:* Facilities and Academics pages.

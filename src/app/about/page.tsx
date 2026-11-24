@@ -144,6 +144,19 @@ export default function AboutPage() {
                   ))}
                 </ul>
               </div>
+
+              {/* Photo: Director at IIT Madras */}
+              <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border border-[#E3EAF7] bg-[#0A1B3D] shadow-sm">
+                <Image
+                  src="/images/leadership/director_at_iit_madras.jpg"
+                  alt="Director Arangi Govinda Babu at IIT Madras"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-2 left-2 bg-[#0A1B3D]/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-white text-[10px] font-bold border border-white/20">
+                  <span>Founder at IIT Madras</span>
+                </div>
+              </div>
             </div>
 
             {/* Full Message Text (8 cols) */}
@@ -223,6 +236,19 @@ export default function AboutPage() {
                   ))}
                 </ul>
               </div>
+
+              {/* Photo: Classroom Mentorship & Honors */}
+              <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border border-[#E3EAF7] bg-[#0A1B3D] shadow-sm">
+                <Image
+                  src="/images/achievements/childrens_day_boys_awards.jpg"
+                  alt="Principal and academic staff with students"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-2 left-2 bg-[#0A1B3D]/80 backdrop-blur-md px-2.5 py-1 rounded-lg text-white text-[10px] font-bold border border-white/20">
+                  <span>Classroom Mentorship & Student Honors</span>
+                </div>
+              </div>
             </div>
 
             {/* Principal Message Text (8 cols) */}
@@ -244,6 +270,88 @@ export default function AboutPage() {
                 <p className="text-sm font-bold text-[#0A1B3D]">Kalepu Satish Kumar</p>
                 <p className="text-xs text-[#5B6B8C]">
                   Principal & Mathematics / IIT Foundation Faculty, Vidyarthi Bhavan IIT Academy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Faculty Team & Campus Community Gallery */}
+      <section className="py-20 bg-[#F5F8FF] border-b border-[#E3EAF7]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#2563EB] bg-white border border-[#E3EAF7] px-3.5 py-1 rounded-full">
+              Our Educators & Community
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0A1B3D] tracking-tight">
+              Dedicated Teachers, Bharatiya Culture & Lifelong Bonding
+            </h2>
+            <p className="text-[#5B6B8C] text-base">
+              A glimpse into the authentic school spirit, dedicated faculty team, and joyous student celebrations at Vidyarthi Bhavan.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Photo 1: Faculty Sankranti Celebration */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E3EAF7] shadow-sm group hover:shadow-[0_12px_30px_rgba(37,99,235,0.10)] transition-all duration-300">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A1B3D]">
+                <Image
+                  src="/images/campus/faculty_sankranti_celebration.jpg"
+                  alt="Vidyarthi Bhavan teaching faculty celebrating Sankranti with Rangoli and Bhogi bonfire"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-[#0A1B3D]/80 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded-md border border-white/20">
+                  Faculty & Staff Team
+                </div>
+              </div>
+              <div className="p-5 space-y-1">
+                <h4 className="font-bold text-base text-[#0A1B3D]">Our Dedicated Teaching Faculty</h4>
+                <p className="text-xs text-[#5B6B8C] leading-relaxed">
+                  Passionate educators in traditional Telugu attire celebrating Sankranti, embodying cultural harmony and educational commitment.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 2: Annual Day Felicitation */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E3EAF7] shadow-sm group hover:shadow-[0_12px_30px_rgba(37,99,235,0.10)] transition-all duration-300">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A1B3D]">
+                <Image
+                  src="/images/leadership/founder_felicitation.jpg"
+                  alt="Founder Arangi Govinda Babu being felicitated with shawl and memento on school annual day stage"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-[#0A1B3D]/80 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded-md border border-white/20">
+                  Annual Day Celebration
+                </div>
+              </div>
+              <div className="p-5 space-y-1">
+                <h4 className="font-bold text-base text-[#0A1B3D]">Leadership Recognition & Milestones</h4>
+                <p className="text-xs text-[#5B6B8C] leading-relaxed">
+                  Founder Arangi Govinda Babu felicitated on stage during annual celebrations honoring educational service in Narasannapeta.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 3: Annual School Excursion Picnic */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E3EAF7] shadow-sm group hover:shadow-[0_12px_30px_rgba(37,99,235,0.10)] transition-all duration-300">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A1B3D]">
+                <Image
+                  src="/images/campus/school_annual_picnic.jpg"
+                  alt="Students, teachers and parents on annual school excursion picnic"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-[#0A1B3D]/80 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded-md border border-white/20">
+                  Annual School Picnic
+                </div>
+              </div>
+              <div className="p-5 space-y-1">
+                <h4 className="font-bold text-base text-[#0A1B3D]">Student-Teacher Bonding</h4>
+                <p className="text-xs text-[#5B6B8C] leading-relaxed">
+                  Annual school picnic and excursion bringing students, teachers, and parents together in joy, friendship, and discovery.
                 </p>
               </div>
             </div>

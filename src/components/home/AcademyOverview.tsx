@@ -1,12 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Brain,
   Compass,
   Heart,
   ArrowRight,
   BookOpenCheck,
-  Sparkles
+  Sparkles,
+  Trophy,
+  Bus,
+  Flag
 } from "lucide-react";
 import { institutionData } from "@/data/institutionData";
 
@@ -119,6 +123,95 @@ export default function AcademyOverview() {
               <p className="text-xs text-[#5B6B8C] leading-relaxed">
                 Bhagavadhgeetha, Medha Suktham chanting, martial arts, yoga, and Andhra traditional Kolatam.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Real Campus Life Photographic Showcase */}
+        <div className="mt-16 pt-12 border-t border-[#E3EAF7] space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#2563EB] bg-[#F5F8FF] border border-[#E3EAF7] px-3 py-1 rounded-full">
+                Authentic Campus Life
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0A1B3D] mt-2">
+                Real Students, Real Discipline & Real Achievements
+              </h3>
+            </div>
+            <Link
+              href="/achievements"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#2563EB] hover:text-[#1E40AF] transition-colors"
+            >
+              <span>View All Achievements & Competitions</span>
+              <ArrowRight className="w-4 h-4 text-[#38BDF8]" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Photo 1: Independence Day & Nation-Building */}
+            <div className="rounded-2xl overflow-hidden bg-[#F5F8FF] border border-[#E3EAF7] shadow-[0_4px_16px_rgba(37,99,235,0.06)] group hover:shadow-[0_12px_30px_rgba(37,99,235,0.12)] transition-all duration-300">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A1B3D]">
+                <Image
+                  src="/images/campus/independence_day_patriotism.jpg"
+                  alt="Founder Arangi Govinda Babu celebrating Independence Day with students in patriotic attire"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-[#0A1B3D]/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center gap-1.5 border border-white/20">
+                  <Flag className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Patriotism & Culture</span>
+                </div>
+              </div>
+              <div className="p-4 space-y-1">
+                <h4 className="font-bold text-sm text-[#0A1B3D]">Independence Day & Bharatiya Heritage</h4>
+                <p className="text-xs text-[#5B6B8C] leading-relaxed">
+                  Instilling national pride, civic courage, and Indian cultural values in our learners from early childhood.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 2: Martial Arts Champions */}
+            <div className="rounded-2xl overflow-hidden bg-[#F5F8FF] border border-[#E3EAF7] shadow-[0_4px_16px_rgba(37,99,235,0.06)] group hover:shadow-[0_12px_30px_rgba(37,99,235,0.12)] transition-all duration-300">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A1B3D]">
+                <Image
+                  src="/images/achievements/martial_arts_champions.jpg"
+                  alt="Vidyarthi Bhavan students winning State Pencak Silat Martial Arts championship trophy"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-[#0A1B3D]/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center gap-1.5 border border-white/20">
+                  <Trophy className="w-3.5 h-3.5 text-[#F59E0B]" />
+                  <span>Martial Arts Champions</span>
+                </div>
+              </div>
+              <div className="p-4 space-y-1">
+                <h4 className="font-bold text-sm text-[#0A1B3D]">State Championship Winners</h4>
+                <p className="text-xs text-[#5B6B8C] leading-relaxed">
+                  Rigorous martial arts and self-defense training building physical reflexes, courage, and championship titles.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 3: School Transport Bus Fleet */}
+            <div className="rounded-2xl overflow-hidden bg-[#F5F8FF] border border-[#E3EAF7] shadow-[0_4px_16px_rgba(37,99,235,0.06)] group hover:shadow-[0_12px_30px_rgba(37,99,235,0.12)] transition-all duration-300">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#0A1B3D]">
+                <Image
+                  src="/images/campus/school_transport_bus.jpg"
+                  alt="Vidyarthi Bhavan dedicated school bus fleet and students in traditional attire"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-3 left-3 bg-[#0A1B3D]/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center gap-1.5 border border-white/20">
+                  <Bus className="w-3.5 h-3.5 text-[#38BDF8]" />
+                  <span>Safe Campus Transport</span>
+                </div>
+              </div>
+              <div className="p-4 space-y-1">
+                <h4 className="font-bold text-sm text-[#0A1B3D]">Dedicated Transport Fleet</h4>
+                <p className="text-xs text-[#5B6B8C] leading-relaxed">
+                  Safe, reliable school bus transportation connecting Narasannapeta town and surrounding mandals.
+                </p>
+              </div>
             </div>
           </div>
         </div>

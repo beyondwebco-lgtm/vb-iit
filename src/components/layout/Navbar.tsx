@@ -50,12 +50,12 @@ export default function Navbar() {
           className="flex items-center gap-3 group focus:outline-none"
           aria-label="Vidyarthi Bhavan IIT Academy Home"
         >
-          <div className="relative w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-2xl bg-gradient-to-br from-[#0A1B3D] to-[#1E40AF] p-1 shadow-[0_4px_14px_rgba(37,99,235,0.18)] group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(56,189,248,0.30)] transition-all duration-200">
+          <div className="relative w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-2xl bg-white p-1 shadow-[0_4px_14px_rgba(37,99,235,0.12)] border border-[#E3EAF7] group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(37,99,235,0.25)] transition-all duration-200">
             <Image
-              src="/images/branding/emblem.svg"
-              alt="VB IIT Academy Emblem"
+              src="/images/branding/logo.png"
+              alt="Vidyarthi Bhavan IIT Academy Official Logo"
               fill
-              className="object-contain p-1"
+              className="object-contain p-0.5"
               priority
             />
           </div>

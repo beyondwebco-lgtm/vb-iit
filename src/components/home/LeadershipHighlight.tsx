@@ -58,6 +58,19 @@ export default function LeadershipHighlight() {
                 </p>
               </div>
 
+              {/* Photo: Director at IIT Madras */}
+              <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-[#E3EAF7] bg-[#0A1B3D]">
+                <Image
+                  src="/images/leadership/director_at_iit_madras.jpg"
+                  alt="Founder Arangi Govinda Babu at Indian Institute of Technology Madras (IIT Madras)"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-2.5 left-2.5 bg-[#0A1B3D]/85 backdrop-blur-md px-3 py-1 rounded-lg text-white text-xs font-bold border border-white/20">
+                  <span>Founder at IIT Madras Campus</span>
+                </div>
+              </div>
+
               {/* Core Message Excerpt */}
               <div className="space-y-3 text-sm text-[#5B6B8C] leading-relaxed">
                 <p>
@@ -137,6 +150,19 @@ export default function LeadershipHighlight() {
                 <p className="mt-1 text-[#5B6B8C] leading-relaxed">
                   Principal Kalepu Satish Kumar personally conducts Mathematics and IIT Foundation classes for high-school students, diagnosing learning needs directly and nurturing logical confidence.
                 </p>
+              </div>
+
+              {/* Photo: Classroom Mentorship & Student Honors */}
+              <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-[#E3EAF7] bg-[#0A1B3D]">
+                <Image
+                  src="/images/achievements/childrens_day_boys_awards.jpg"
+                  alt="Principal and faculty mentoring students during academic honors ceremony"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-2.5 left-2.5 bg-[#0A1B3D]/85 backdrop-blur-md px-3 py-1 rounded-lg text-white text-xs font-bold border border-white/20">
+                  <span>Classroom Mentorship & Student Honors</span>
+                </div>
               </div>
 
               {/* Educational Priorities Preview */}

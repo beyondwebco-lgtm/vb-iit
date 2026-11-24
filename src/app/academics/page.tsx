@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import {
   Atom,
@@ -29,6 +30,34 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   Trophy: <Trophy className="w-8 h-8" />,
   Heart: <Heart className="w-8 h-8" />,
   Shield: <Shield className="w-8 h-8" />,
+};
+
+const PROGRAM_MEDIA: Record<string, { image: string; alt: string; tag: string }> = {
+  "iit-neet-foundation": {
+    image: "/images/leadership/director_at_iit_madras.jpg",
+    alt: "Founder at IIT Madras embodying our IIT Foundation curriculum standards",
+    tag: "IIT-JEE & NEET Mentorship"
+  },
+  "civils-olympiad-foundations": {
+    image: "/images/achievements/district_competition_winners.jpg",
+    alt: "Vidyarthi Bhavan students winning trophies at District AI & Olympiad competition",
+    tag: "Olympiad & Talent Trophies"
+  },
+  "cbse-state-ncert": {
+    image: "/images/branding/wonder_kidz_logo.png",
+    alt: "Wonder Kidz Play School Narasannapeta Official Logo",
+    tag: "Wonder Kidz • First Play School"
+  },
+  "spiritual-education": {
+    image: "/images/campus/classical_dance_culture.jpg",
+    alt: "Founder with students in classical dance costumes at cultural event",
+    tag: "Classical Arts & Heritage"
+  },
+  "life-skills-creative": {
+    image: "/images/campus/nature_field_trip.jpg",
+    alt: "Students and teachers on Sunnapugadda nature exploration field trip",
+    tag: "Experiential Field Trips"
+  }
 };
 
 export default function AcademicsPage() {
@@ -196,6 +225,31 @@ export default function AcademicsPage() {
 
                   {/* Right Column: Key Features & Pedagogy Card (5 cols) */}
                   <div className="lg:col-span-5 bg-white p-6 rounded-2xl border border-[#E3EAF7] shadow-sm space-y-4">
+                    {PROGRAM_MEDIA[program.id] && (
+                      <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-[#0A1B3D] border border-[#E3EAF7]">
+                        {program.id === "cbse-state-ncert" ? (
+                          <div className="relative w-full h-full bg-white flex items-center justify-center p-3">
+                            <Image
+                              src={PROGRAM_MEDIA[program.id].image}
+                              alt={PROGRAM_MEDIA[program.id].alt}
+                              fill
+                              className="object-contain p-2"
+                            />
+                          </div>
+                        ) : (
+                          <Image
+                            src={PROGRAM_MEDIA[program.id].image}
+                            alt={PROGRAM_MEDIA[program.id].alt}
+                            fill
+                            className="object-cover"
+                          />
+                        )}
+                        <div className="absolute top-2.5 left-2.5 bg-[#0A1B3D]/85 backdrop-blur-md text-white text-[10px] font-bold px-2 py-0.5 rounded-md border border-white/20">
+                          {PROGRAM_MEDIA[program.id].tag}
+                        </div>
+                      </div>
+                    )}
+
                     <h3 className="font-extrabold text-base text-[#0A1B3D] border-b border-[#E3EAF7] pb-2">
                       Program Components & Features
                     </h3>

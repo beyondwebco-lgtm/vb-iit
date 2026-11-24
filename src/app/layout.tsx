@@ -39,19 +39,23 @@ export const metadata: Metadata = {
       "Premier school education & IIT-JEE Foundation in Narasannapeta. Blending competitive academic rigor with AI skills and Indian culture.",
     images: [
       {
-        url: "/images/branding/logo.svg",
-        width: 1200,
-        height: 630,
-        alt: `${institutionData.fullName} Logo`,
+        url: "/images/branding/logo.png",
+        width: 800,
+        height: 800,
+        alt: `${institutionData.fullName} Official Logo`,
       },
     ],
   },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: `${institutionData.fullName} | Narasannapeta`,
     description:
       "Building the Real Pillars of Bharat through IIT Foundation, AI literacy, and moral character in Narasannapeta.",
-    images: ["/images/branding/logo.svg"],
+    images: ["/images/branding/logo.png"],
   },
   robots: {
     index: true,
@@ -70,7 +74,7 @@ export default function RootLayout({
     name: institutionData.fullName,
     alternateName: institutionData.shortName,
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://vbiitacademy.edu.in",
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://vbiitacademy.edu.in"}/images/branding/logo.svg`,
+    logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://vbiitacademy.edu.in"}/images/branding/logo.png`,
     slogan: institutionData.tagline,
     description:
       "Vidyarthi Bhavan IIT Academy is a premier educational institution in Narasannapeta, AP, specializing in school academics, IIT-JEE Foundation for high-school students, AI & coding, and Indian heritage values.",

@@ -22,12 +22,12 @@ export default function Footer() {
           {/* Column 1: Institution Info & Vision (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12 shrink-0 rounded-2xl bg-white p-1 shadow-[0_4px_12px_rgba(10,27,61,0.2)]">
+              <div className="relative w-12 h-12 shrink-0 rounded-2xl bg-white p-1 shadow-[0_4px_12px_rgba(10,27,61,0.2)] border border-white/20">
                 <Image
-                  src="/images/branding/emblem.svg"
-                  alt="VB IIT Academy Emblem"
+                  src="/images/branding/logo.png"
+                  alt="Vidyarthi Bhavan IIT Academy Official Logo"
                   fill
-                  className="object-contain p-1"
+                  className="object-contain p-0.5"
                 />
               </div>
               <div>
@@ -48,6 +48,22 @@ export default function Footer() {
             <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-xs text-[#E3EAF7]">
               <p className="font-semibold text-white mb-1">Our Core Educational Philosophy:</p>
               <p className="italic text-[#38BDF8]">“{institutionData.motto}”</p>
+            </div>
+
+            {/* Wonder Kidz Pre-Primary badge */}
+            <div className="flex items-center gap-3 p-3 rounded-2xl bg-white/5 border border-white/10">
+              <div className="relative w-10 h-10 shrink-0 rounded-xl bg-white p-1">
+                <Image
+                  src="/images/branding/wonder_kidz_logo.png"
+                  alt="Wonder Kidz Play School Narasannapeta Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-xs">
+                <p className="font-bold text-white">Wonder Kidz Play School</p>
+                <p className="text-[#38BDF8] text-[11px]">The First Play School in Narasannapeta</p>
+              </div>
             </div>
 
             <div className="pt-2 flex flex-wrap gap-2">

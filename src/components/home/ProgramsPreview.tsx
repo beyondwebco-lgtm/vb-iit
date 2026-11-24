@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Atom,
   BookOpen,
@@ -77,6 +78,20 @@ export default function ProgramsPreview() {
                 <p className="text-xs sm:text-sm text-[#5B6B8C] leading-relaxed line-clamp-3">
                   {program.description}
                 </p>
+
+                {program.id === "cbse-state-ncert" && (
+                  <div className="flex items-center gap-2 p-2 rounded-xl bg-white border border-[#E3EAF7]">
+                    <div className="relative w-6 h-6 shrink-0">
+                      <Image
+                        src="/images/branding/wonder_kidz_logo.png"
+                        alt="Wonder Kidz Play School Narasannapeta Logo"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <span className="text-[11px] font-bold text-[#0A1B3D]">Wonder Kidz: First Play School in Town</span>
+                  </div>
+                )}
 
                 <div className="pt-2 border-t border-[#E3EAF7] space-y-2">
                   {program.highlights.slice(0, 2).map((highlight, idx) => (
