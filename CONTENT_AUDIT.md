@@ -151,3 +151,17 @@ Directly confirmed and communicated by Founder Arangi Govinda Babu:
 - **Competitions & Field Trips:** Educational field excursions; active participation in School, District, State, and National level competitions.
 - **Physical Stamina & Sports:** Martial Arts, Sports, Games & Daily Yoga.
 - **Traditional Andhra Dance & Culture:** Semi-Classical, Folk, Cultural dances, and traditional Kolatam.
+
+
+---
+
+## 5. Verified Historical Milestone & Campus Infrastructure (Direct Input from Founder Govinda Babu - Nov 2026)
+
+Directly confirmed by Founder Arangi Govinda Babu on 23/11/2026:
+
+### 5.1 Historical Milestone
+- **The First Play School in Narasannapeta:** Vidyarthi Bhavan established the very first play school in Narasannapeta, pioneering structured early childhood care and pre-primary education in the town.
+- **Pre-Primary Specialization:** 100% pre-primary program sourced from Delhi Publication with a child-centric, low-baggage methodology.
+
+### 5.2 Campus Infrastructure Feature
+- **Complete A/C Campus:** The entire school campus and academic classrooms are 100% air-conditioned, providing a climate-controlled, dust-free, and noise-buffered learning environment optimized for student comfort and deep concentration year-round.

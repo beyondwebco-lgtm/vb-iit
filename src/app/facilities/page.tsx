@@ -34,14 +34,22 @@ export default function FacilitiesPage() {
       {/* Header */}
       <section className="bg-gradient-to-br from-[#0A1B3D] via-[#0A1B3D] to-[#1E40AF] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
-            <span>Verified Campus Infrastructure</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
+              <span>Verified Campus Infrastructure</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#38BDF8]/20 border border-[#38BDF8]/40 text-white text-xs font-semibold">
+              <span>Complete A/C Campus</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#38BDF8] text-xs font-semibold">
+              <span>First Play School in Narasannapeta</span>
+            </div>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight max-w-3xl">
-            Modern Academic Infrastructure & Safe Campus
+            Complete A/C Campus & Purpose-Built Infrastructure
           </h1>
           <p className="text-[#E3EAF7] text-base sm:text-lg max-w-2xl leading-relaxed font-normal">
-            Every learning space at Vidyarthi Bhavan IIT Academy is designed to promote sustained concentration, interactive inquiry, physical wellness, and moral character.
+            Every learning space at Vidyarthi Bhavan IIT Academy is completely air-conditioned, climate-controlled, and acoustically balanced to promote deep concentration, interactive inquiry, physical wellness, and moral character.
           </p>
         </div>
       </section>
@@ -117,23 +125,29 @@ export default function FacilitiesPage() {
 
       {/* Campus Safety & Atmosphere: Deep Navy Anchor */}
       <section className="py-16 bg-[#0A1B3D] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div className="space-y-2 p-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center md:text-left">
+          <div className="space-y-2 p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 className="font-bold text-lg text-white">Complete A/C Campus</h3>
+            <p className="text-xs text-[#E3EAF7]/80 leading-relaxed">
+              100% air-conditioned classrooms providing a climate-controlled, dust-free environment for uninterrupted concentration.
+            </p>
+          </div>
+          <div className="space-y-2 p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 className="font-bold text-lg text-white">First Play School in Town</h3>
+            <p className="text-xs text-[#E3EAF7]/80 leading-relaxed">
+              Pioneered early childhood education in Narasannapeta with a specialized 100% program from Delhi Publication.
+            </p>
+          </div>
+          <div className="space-y-2 p-4 rounded-2xl bg-white/5 border border-white/10">
             <h3 className="font-bold text-lg text-white">Disciplined & Safe Campus</h3>
             <p className="text-xs text-[#E3EAF7]/80 leading-relaxed">
-              CCTV surveillance, supervised corridors, and strict visitor verification ensure a secure learning environment for every child.
+              CCTV surveillance, supervised corridors, and strict visitor verification ensure a secure environment for every child.
             </p>
           </div>
-          <div className="space-y-2 p-4">
-            <h3 className="font-bold text-lg text-white">Dedicated Math & Science Rooms</h3>
+          <div className="space-y-2 p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 className="font-bold text-lg text-white">Dedicated STEM & Labs</h3>
             <p className="text-xs text-[#E3EAF7]/80 leading-relaxed">
-              Equipped with analytical kits and conceptual models to support Principal-led IIT foundation classes.
-            </p>
-          </div>
-          <div className="space-y-2 p-4">
-            <h3 className="font-bold text-lg text-white">Centrally Located in Narasannapeta</h3>
-            <p className="text-xs text-[#E3EAF7]/80 leading-relaxed">
-              Convenient access from major transport points across Narasannapeta and surrounding areas in Srikakulam District.
+              ULO Bangalore STEM coding center, analytical science kits, and Principal-led IIT foundation classrooms.
             </p>
           </div>
         </div>

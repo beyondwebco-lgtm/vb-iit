@@ -17,9 +17,17 @@ export default function AcademyOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Mission & Positioning (6 cols) */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F5F8FF] border border-[#E3EAF7] text-[#2563EB] text-xs font-bold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5 text-[#38BDF8]" />
-              <span>{institutionData.secondaryMotto}</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F5F8FF] border border-[#E3EAF7] text-[#2563EB] text-xs font-bold uppercase tracking-wider">
+                <Sparkles className="w-3.5 h-3.5 text-[#38BDF8]" />
+                <span>{institutionData.secondaryMotto}</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2563EB]/10 border border-[#2563EB]/20 text-[#0A1B3D] text-xs font-bold">
+                <span>The First Play School in Narasannapeta</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#38BDF8]/15 border border-[#38BDF8]/30 text-[#0A1B3D] text-xs font-bold">
+                <span>Complete A/C Campus</span>
+              </div>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0A1B3D] tracking-tight leading-tight">
@@ -27,7 +35,7 @@ export default function AcademyOverview() {
             </h2>
 
             <p className="text-[#5B6B8C] text-base leading-relaxed">
-              Situated on <strong className="text-[#0A1B3D] font-semibold">State Bank Street, Narasannapeta, Srikakulam District</strong>, Vidyarthi Bhavan IIT Academy was established to move beyond superficial rote memorization and cultivate students who are intellectually confident, mathematically competent, and morally grounded.
+              Situated on <strong className="text-[#0A1B3D] font-semibold">State Bank Street, Narasannapeta, Srikakulam District</strong>, Vidyarthi Bhavan IIT Academy holds the historic honor of being <strong className="text-[#0A1B3D] font-semibold">the first play school in Narasannapeta</strong>. Equipped with a modern <strong className="text-[#0A1B3D] font-semibold">complete A/C campus</strong>, our institution provides a climate-controlled, dust-free environment where young minds flourish without distractions.
             </p>
 
             <p className="text-[#5B6B8C] text-sm sm:text-base leading-relaxed">

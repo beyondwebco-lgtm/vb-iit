@@ -35,6 +35,8 @@ export const institutionData = {
   tagline: "Building the Real Pillars of Bharat",
   motto: "Not just job literacy—but life education.",
   secondaryMotto: "More Knowledge with Low Luggage",
+  playSchoolPioneer: "The First Play School in Narasannapeta",
+  campusInfrastructure: "Complete A/C Campus",
   spiritualAnchor: "HARE RAMA HARE RAMA RAMA RAMA HARE HARE – HARE KRISHNA HARE KRISHNA KRISHNA KRISHNA HARE HARE",
   pedagogy: {
     descriptive: "Descriptive Method — Building profound conceptual depth, theoretical clarity, and step-by-step analytical reasoning.",
@@ -187,21 +189,23 @@ export const institutionData = {
     {
       id: "cbse-state-ncert",
       title: "CBSE & State Board Curriculum",
-      subtitle: "State Board with NCERT & 100% Pre-Primary Delhi Publication",
-      targetGroup: "Pre-Primary to Class 10",
-      description: "Structured academic standards blending CBSE frameworks, State Board with NCERT textbooks, and a 100% dedicated Pre-Primary program from Delhi Publication under our 'More Knowledge with Low Luggage' philosophy.",
+      subtitle: "The First Play School in Narasannapeta • Delhi Publication 100% Pre-Primary",
+      targetGroup: "Pre-Primary (Play School) to Class 10",
+      description: "Established as the very first play school in Narasannapeta, our academic framework provides seamless learning from foundational pre-primary years to Class 10. Combining CBSE standards, State Board with NCERT, and our 'More Knowledge with Low Luggage' philosophy within a complete A/C campus.",
       highlights: [
-        "‘More Knowledge with Low Luggage’ philosophy reducing student backpack burden",
+        "The First Play School in Narasannapeta — Pioneering foundational early childhood learning",
         "100% Pre-Primary Program from Delhi Publication",
+        "Complete A/C Campus ensuring comfortable and focused learning",
+        "‘More Knowledge with Low Luggage’ philosophy reducing student backpack burden",
         "State Board seamlessly integrated with NCERT syllabus",
-        "CBSE academic curriculum with continuous comprehensive evaluation",
-        "Strong foundation across Mathematics, Sciences, Social Studies & Languages"
+        "CBSE academic curriculum with continuous comprehensive evaluation"
       ],
       features: [
-        "Delhi Publication pre-primary curriculum",
+        "First play school in Narasannapeta legacy",
+        "Delhi Publication 100% pre-primary curriculum",
+        "Complete A/C climate-controlled classrooms",
         "NCERT-aligned conceptual textbooks",
-        "Low luggage classroom learning model",
-        "Continuous evaluation without stressful cramming"
+        "Low luggage classroom learning model"
       ],
       icon: "BookOpen"
     },
@@ -274,14 +278,15 @@ export const institutionData = {
   facilities: [
     {
       id: "smart-classrooms",
-      title: "Interactive Learning Classrooms",
-      category: "Academic Infrastructure",
-      description: "Spacious, well-ventilated, and acoustically balanced classrooms engineered to maintain optimal student engagement, focus, and conceptual learning.",
+      title: "Complete A/C Campus & Smart Classrooms",
+      category: "100% Air-Conditioned Infrastructure",
+      description: "A complete A/C campus providing a climate-controlled, dust-free, and acoustically optimized learning environment across all classrooms for maximum student focus, comfort, and engagement in Narasannapeta.",
       verifiedDetails: [
-        "Ergonomic seating optimized for long study sessions",
-        "Equipped with modern multimedia teaching displays",
-        "High teacher-student interaction layout",
-        "Well-lit natural airflow environment"
+        "Complete A/C Campus across all classrooms and academic wings",
+        "Climate-controlled, dust-free learning spaces optimized for student health",
+        "Ergonomic seating engineered for sustained study sessions",
+        "Equipped with modern multimedia interactive teaching displays",
+        "High teacher-student interaction layout with natural acoustic balance"
       ],
       icon: "GraduationCap"
     },

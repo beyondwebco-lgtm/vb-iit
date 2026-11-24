@@ -24,8 +24,16 @@ export default function AboutPage() {
       {/* Page Hero */}
       <section className="bg-gradient-to-br from-[#0A1B3D] via-[#0A1B3D] to-[#1E40AF] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
-            <span>About Vidyarthi Bhavan IIT Academy</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
+              <span>About Vidyarthi Bhavan IIT Academy</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#38BDF8]/20 border border-[#38BDF8]/40 text-white text-xs font-semibold">
+              <span>First Play School in Narasannapeta</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#38BDF8] text-xs font-semibold">
+              <span>Complete A/C Campus</span>
+            </div>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight max-w-3xl">
             Shaping Confident Minds, Strong Leaders & Pillars of Bharat
@@ -48,10 +56,10 @@ export default function AboutPage() {
                 Rooted in Narasannapeta, Dedicated to National Excellence
               </h2>
               <p className="text-[#5B6B8C] text-base leading-relaxed">
-                Vidyarthi Bhavan IIT Academy was conceived to bridge a vital gap in modern schooling: the false divide between rigorous competitive mathematics and deep moral character.
+                Vidyarthi Bhavan holds the distinct historic honor of establishing <strong className="text-[#0A1B3D] font-semibold">the first play school in Narasannapeta</strong>. Over the years, that pioneering vision has grown into a premier institution offering a modern <strong className="text-[#0A1B3D] font-semibold">complete A/C campus</strong> and bridging the gap between rigorous competitive preparation and deep moral character.
               </p>
               <p className="text-[#5B6B8C] text-base leading-relaxed">
-                Located in <strong className="text-[#0A1B3D] font-semibold">Narasannapeta, Srikakulam District, Andhra Pradesh</strong>, our academy prepares students to meet the rigorous demands of national competitive examinations like the IIT-JEE and Olympiads, while instilling respect for parents, teachers, and Bharatiya heritage.
+                Located on <strong className="text-[#0A1B3D] font-semibold">State Bank Street, Narasannapeta, Srikakulam District, Andhra Pradesh</strong>, our academy prepares students to meet the rigorous demands of national competitive examinations like IIT-JEE, NEET, Civils, and Olympiads, while instilling respect for parents, teachers, and Bharatiya heritage.
               </p>
               <div className="p-4 rounded-2xl bg-[#F5F8FF] border-l-4 border-[#2563EB] text-[#0A1B3D] space-y-1">
                 <p className="font-bold text-xs uppercase tracking-wider text-[#2563EB]">

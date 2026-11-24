@@ -10,7 +10,9 @@ import {
   BookOpen,
   MapPin,
   CheckCircle,
-  GraduationCap
+  GraduationCap,
+  Sparkles,
+  Wind
 } from "lucide-react";
 import { institutionData } from "@/data/institutionData";
 
@@ -30,15 +32,20 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Institutional Positioning & CTAs (7 cols) */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            {/* Top Verified Location & Core Philosophy Badges */}
+            {/* Top Verified Location & Distinction Badges */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-md">
                 <MapPin className="w-4 h-4 text-[#38BDF8] shrink-0" />
                 <span>{institutionData.fullName} • {institutionData.location.town}</span>
               </div>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F59E0B]/15 border border-[#F59E0B]/30 text-[#F59E0B] text-xs font-bold tracking-wider uppercase backdrop-blur-md">
-                More Knowledge with Low Luggage
-              </span>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#38BDF8]/20 border border-[#38BDF8]/40 text-white text-xs font-semibold tracking-wide backdrop-blur-md">
+                <Sparkles className="w-3.5 h-3.5 text-[#38BDF8]" />
+                <span>The First Play School in Narasannapeta</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/15 border border-white/25 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
+                <Wind className="w-3.5 h-3.5 text-[#38BDF8]" />
+                <span>Complete A/C Campus</span>
+              </div>
             </div>
 
             {/* Main Headline */}
@@ -50,43 +57,43 @@ export default function HeroSection() {
             </h1>
 
             {/* Institutional Motto & Mission Statement */}
-            <p className="text-base sm:text-lg text-[#E3EAF7] font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-lg sm:text-xl text-[#E3EAF7] font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               <span className="font-semibold text-white">“{institutionData.motto}”</span>
               <br className="hidden sm:inline" />
-              Integrating <strong>IIT & NEET Foundations</strong>, <strong>Civils & Olympiads</strong>, and <strong>ULO Bangalore STEM & Coding</strong> with timeless <strong>Spiritual Education & Medha Suktham</strong> chanting.
+              Blending IIT-JEE foundational rigor, conceptual clarity, and AI innovation with timeless Indian culture and character building.
             </p>
 
             {/* Key Verified Institutional Strengths */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-left max-w-xl mx-auto lg:mx-0">
               <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-                <GraduationCap className="w-5 h-5 text-[#38BDF8] shrink-0 mt-0.5" />
+                <Wind className="w-5 h-5 text-[#38BDF8] shrink-0 mt-0.5" />
                 <div className="text-xs">
-                  <p className="font-bold text-white">IIT & NEET Foundations</p>
-                  <p className="text-[#E3EAF7]/80">Classes 6-10 Descriptive & Objective methods</p>
+                  <p className="font-bold text-white">Complete A/C Campus</p>
+                  <p className="text-[#E3EAF7]/80">Climate-controlled, dust-free classrooms</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-                <Award className="w-5 h-5 text-[#38BDF8] shrink-0 mt-0.5" />
+                <Sparkles className="w-5 h-5 text-[#38BDF8] shrink-0 mt-0.5" />
                 <div className="text-xs">
-                  <p className="font-bold text-white">Civils, Olympiads & Abacus</p>
-                  <p className="text-[#E3EAF7]/80">Logical reasoning & speed arithmetic</p>
+                  <p className="font-bold text-white">First Play School in Town</p>
+                  <p className="text-[#E3EAF7]/80">Pioneering early education & Delhi Pub</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
                 <CheckCircle className="w-5 h-5 text-[#38BDF8] shrink-0 mt-0.5" />
                 <div className="text-xs">
-                  <p className="font-bold text-white">STEM & Python Coding</p>
-                  <p className="text-[#E3EAF7]/80">Powered by ULO Bangalore curriculum</p>
+                  <p className="font-bold text-white">Principal-Led Classroom</p>
+                  <p className="text-[#E3EAF7]/80">Math taught by Principal Kalepu Satish Kumar</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
-                <ShieldCheck className="w-5 h-5 text-[#38BDF8] shrink-0 mt-0.5" />
+                <GraduationCap className="w-5 h-5 text-[#38BDF8] shrink-0 mt-0.5" />
                 <div className="text-xs">
-                  <p className="font-bold text-white">Spiritual & Vedic Chanting</p>
-                  <p className="text-[#E3EAF7]/80">Gita, Medha Suktham & Vishnu Sahasranamam</p>
+                  <p className="font-bold text-white">IIT & NEET Foundations</p>
+                  <p className="text-[#E3EAF7]/80">Classes 6 to 10 dual pedagogy track</p>
                 </div>
               </div>
             </div>

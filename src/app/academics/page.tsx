@@ -37,14 +37,22 @@ export default function AcademicsPage() {
       {/* Header */}
       <section className="bg-gradient-to-br from-[#0A1B3D] via-[#0A1B3D] to-[#1E40AF] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
-            <span>Academic Philosophy: {institutionData.secondaryMotto}</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[#38BDF8] text-xs font-semibold tracking-wide backdrop-blur-md">
+              <span>Academic Philosophy: {institutionData.secondaryMotto}</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#38BDF8]/20 border border-[#38BDF8]/40 text-white text-xs font-semibold">
+              <span>First Play School in Narasannapeta</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#38BDF8] text-xs font-semibold">
+              <span>Complete A/C Campus</span>
+            </div>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight max-w-3xl">
             Intellectual Rigor, Dual Pedagogy & Bharatiya Character
           </h1>
           <p className="text-[#E3EAF7] text-base sm:text-lg max-w-2xl leading-relaxed font-normal">
-            Our academic ecosystem balances both Descriptive and Objective methodologies across IIT-JEE, NEET, Civils, CBSE, and State Board with NCERT syllabus—guided by our guiding motto: <strong className="text-white font-semibold">“{institutionData.secondaryMotto}”</strong>.
+            From the pioneering legacy of the first play school in Narasannapeta to Class 10 board, IIT & NEET preparation within a complete A/C campus—guided by our motto: <strong className="text-white font-semibold">“{institutionData.secondaryMotto}”</strong>.
           </p>
         </div>
       </section>
